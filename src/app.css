@@ -1,0 +1,54 @@
+@import "foundation/hoge";
+:root {
+  --myColor: red;
+}
+
+h1{
+  color: #000;
+  width: calc(100px / 2);
+}
+
+a {
+  color: color(red blackness(50%));
+}
+a:hover {
+  color: color(red blackness(50%) whiteness(25%));
+}
+
+
+div {
+  background-color: var(--myColor)
+}
+
+div {
+  display:flex;
+}
+
+.block{
+  &__element{
+    display: block;
+  }
+}
+
+@define-mixin icon $name {
+    padding-left: 16px;
+    &::after {
+        content: "";
+        background-url: url(/icons/$(name).png);
+    }
+}
+
+.search {
+    @mixin icon search;
+}
+
+
+@define-placeholder simple-list {
+  list-style-type: none;
+}
+.cats-list {
+  @extend simple-list;
+}
+.dogs-list {
+  @extend simple-list;
+}

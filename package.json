@@ -1,0 +1,26 @@
+{
+  "name": "study-postcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "cssnano": "^3.8.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^2.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^8.2.0",
+    "postcss-mixins": "^5.4.0",
+    "postcss-nested": "^1.0.0"
+  }
+}
