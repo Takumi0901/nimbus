@@ -1,5 +1,9 @@
 dest/
+public/css/
 
 
 # npm
 node_modules/
+
+#webstorm
+.idea/

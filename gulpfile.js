@@ -1,38 +1,50 @@
 var gulp = require('gulp'),
     postcss = require('gulp-postcss');
+var sourcemaps = require('gulp-sourcemaps'),
+  rename = require("gulp-rename"),
+  autoPrefixer = require('autoprefixer'),
+  cssNano = require('cssnano'),
+  customProperties = require('postcss-custom-properties'),
+  postcssImport = require('postcss-import'),
+  postcssNested = require('postcss-nested'),
+  postcssCalc = require('postcss-calc'),
+  postcssColorFunction = require('postcss-color-function'),
+  postcssExtend = require('postcss-extend'),
+  postcssMixins = require('postcss-mixins');
+
 
 gulp.task('css', function() {
-  var sourcemaps = require('gulp-sourcemaps');
-  var rename = require("gulp-rename");
-  var autoPrefixer = require('autoprefixer');
-  var cssNano = require('cssnano');
-  var customProperties = require('postcss-custom-properties');
-  var postcssImport = require('postcss-import');
-  var postcssNested = require('postcss-nested');
-  var postcssCalc = require('postcss-calc');
-  var postcssColorFunction = require('postcss-color-function');
-  var postcssExtend = require('postcss-extend');
-  var postcssMixins = require('postcss-mixins');
 
 
-  var preprocessors = [
+  var preProcessors = [
     postcssImport,
-    autoPrefixer,
     customProperties,
     postcssCalc,
     postcssColorFunction,
     postcssExtend,
     postcssMixins,
     postcssNested,
-    cssNano
   ];
 
-  return gulp.src('./src/app.css')
+  var postProcessors = [
+    autoPrefixer,
+    // cssNano
+  ];
+
+  return gulp.src('./src/**.css')
+    .pipe(postcss(preProcessors))
+    .pipe(postcss(postProcessors))
+    .pipe(gulp.dest('./dest/css'));
+});
+
+gulp.task('css:min', function() {
+
+  return gulp.src('./dest/css/app.css')
     .pipe(sourcemaps.init())
-    .pipe(postcss(preprocessors))
+    .pipe(postcss([cssNano]))
     .pipe(rename('app.min.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dest'));
+    .pipe(gulp.dest('./public/css'));
 });
 
 /**
@@ -41,6 +53,7 @@ gulp.task('css', function() {
 gulp.task('watch', function(){
     gulp.watch('./src/**/**.css', function(event) {
         gulp.run('css');
+        gulp.run('css:min');
     });
 });
 
