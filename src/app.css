@@ -1,5 +1,16 @@
+@charset "UTF-8";
+/* =========================================================
+ Foundation
+========================================================= */
 @import "foundation/variables";
+@import "foundation/sanitize";
 
+
+/* Level 3
+--------------------------------------------------------- */
+
+
+/* Level 4 */
 h1{
   font-size: var(--baseSize);
   color: #f00;

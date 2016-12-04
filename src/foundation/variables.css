@@ -1,6 +1,6 @@
 :root {
   /** base **/
-  --baseSize: 12px;
-  /** baseColor **/
-  --baseColor: #000;
+  --baseSize: 8;
+  --maxWidth: 1200px;
+  --breakPoint: 768px;
 }
