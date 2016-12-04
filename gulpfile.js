@@ -1,21 +1,19 @@
 var gulp = require('gulp'),
-    postcss = require('gulp-postcss');
-var sourcemaps = require('gulp-sourcemaps'),
-  rename = require("gulp-rename"),
-  autoPrefixer = require('autoprefixer'),
-  cssNano = require('cssnano'),
-  customProperties = require('postcss-custom-properties'),
-  postcssImport = require('postcss-import'),
-  postcssNested = require('postcss-nested'),
-  postcssCalc = require('postcss-calc'),
-  postcssColorFunction = require('postcss-color-function'),
-  postcssExtend = require('postcss-extend'),
-  postcssMixins = require('postcss-mixins');
+    postcss = require('gulp-postcss'),
+    sourcemaps = require('gulp-sourcemaps'),
+    rename = require("gulp-rename"),
+    autoPrefixer = require('autoprefixer'),
+    cssNano = require('cssnano'),
+    customProperties = require('postcss-custom-properties'),
+    postcssImport = require('postcss-import'),
+    postcssNested = require('postcss-nested'),
+    postcssCalc = require('postcss-calc'),
+    postcssColorFunction = require('postcss-color-function'),
+    postcssExtend = require('postcss-extend'),
+    postcssMixins = require('postcss-mixins');
 
 
 gulp.task('css', function() {
-
-
   var preProcessors = [
     postcssImport,
     customProperties,
@@ -25,10 +23,8 @@ gulp.task('css', function() {
     postcssMixins,
     postcssNested,
   ];
-
   var postProcessors = [
-    autoPrefixer,
-    // cssNano
+    autoPrefixer
   ];
 
   return gulp.src('./src/**.css')
@@ -53,6 +49,8 @@ gulp.task('css:min', function() {
 gulp.task('watch', function(){
     gulp.watch('./src/**/**.css', function(event) {
         gulp.run('css');
+    });
+    gulp.watch('./dest/css/**.css', function(event) {
         gulp.run('css:min');
     });
 });

@@ -3,4 +3,5 @@
 h1{
   font-size: var(--baseSize);
   color: #f00;
+  display: grid;
 }
