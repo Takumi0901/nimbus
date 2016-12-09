@@ -1,6 +1,30 @@
 :root {
-  /** base **/
-  --baseSize: 8;
+  /* base */
+  --baseSize: 8px;
   --maxWidth: 1200px;
   --breakPoint: 768px;
+
+  /* viewport */
+  @custom-media --viewportPc (max-width: 768px);
+
+  /* font */
+  --baseFontFamily: Arial,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+  --baseFontSize: 12px;
+  --baseLineHeight: 1.4;
+
+  /* baseColor */
+  --baseColor: #f1f1f1;
+  --baseColorLighten: #f9f9f9;
+  --baseColorWhite: #fff;
+  --baseColorText: #515151;
+  --baseColorBorder: #9e9e9e;
+  --baseAlert: #f73b6a;
+
+  /* margin */
+  --baseMargin: var(--baseSize);
+
+  /* contentColor */
+  --colorPrimary: #4bd5f2;
+  --colorSecondary: #2dd885;
+  --colorHighlight: #f24b4b;
 }

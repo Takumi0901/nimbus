@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     postcssCalc = require('postcss-calc'),
     postcssColorFunction = require('postcss-color-function'),
     postcssExtend = require('postcss-extend'),
+    postcssMedia = require('postcss-custom-media'),
     postcssMixins = require('postcss-mixins');
 
 
@@ -22,6 +23,7 @@ gulp.task('css', function() {
     postcssExtend,
     postcssMixins,
     postcssNested,
+    postcssMedia
   ];
   var postProcessors = [
     autoPrefixer
