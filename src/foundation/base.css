@@ -24,7 +24,6 @@ address{
 }
 
 a {
-  color: inherit;
   cursor: pointer;
   color: var(--baseColorText);
 

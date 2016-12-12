@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     postcssColorFunction = require('postcss-color-function'),
     postcssExtend = require('postcss-extend'),
     postcssMedia = require('postcss-custom-media'),
-    postcssMixins = require('postcss-mixins');
+    postcssMixins = require('postcss-mixins'),
+    postcssVars = require('postcss-simple-vars');
 
 
 gulp.task('css', function() {
@@ -23,7 +24,8 @@ gulp.task('css', function() {
     postcssExtend,
     postcssMixins,
     postcssNested,
-    postcssMedia
+    postcssMedia,
+    postcssVars
   ];
   var postProcessors = [
     autoPrefixer
@@ -49,7 +51,7 @@ gulp.task('css:min', function() {
  * watch
  */
 gulp.task('watch', function(){
-    gulp.watch('./src/**/**.css', function(event) {
+    gulp.watch('./src/**/**/**.css', function(event) {
         gulp.run('css');
     });
     gulp.watch('./dest/css/**.css', function(event) {

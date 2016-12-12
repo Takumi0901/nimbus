@@ -1,19 +1,23 @@
 @charset "UTF-8";
 /* =========================================================
+ Core
+========================================================= */
+@import "core/variables.css";
+@import "core/mixins/btn-flat.css";
+
+/* =========================================================
  Foundation
 ========================================================= */
-@import "foundation/variables";
-@import "foundation/sanitize";
-@import "foundation/base";
+@import "foundation/sanitize.css";
+@import "foundation/base.css";
 
 
-/* Level 3
+/* =========================================================
+ Object
+========================================================= */
+
+/* Component
 --------------------------------------------------------- */
+@import "object/component/alert.css";
+@import "object/component/btn.css";
 
-
-/* Level 4 */
-h1{
-  font-size: var(--baseSize);
-  color: #f00;
-  display: grid;
-}

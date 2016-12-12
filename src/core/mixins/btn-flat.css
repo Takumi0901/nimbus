@@ -1,0 +1,22 @@
+@define-mixin button-flat-color $base-color: var(--baseColorText), $background: #f1f1f1, $border-color: #f4f4f4, $border-width: 1px{
+  color: $base-color !important;
+  background-color: $background;
+  border: solid $border-width $border-color;
+  border-radius: 5px;
+
+&:link {
+   color: $base-color !important;
+   background-color: $background;
+ }
+&:hover, &:active, &:focus {
+                      color: color(var(--baseColorText) whiteness(20%)) !important;
+                      background-color: color($base-color whiteness(60%));
+                      border: solid $border-width color($base-color whiteness(60%));
+                    }
+&.disabled,
+&[disabled],
+ fieldset[disabled] & {
+   background-color: $background;
+   border-color: $border-color;
+ }
+}

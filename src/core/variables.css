@@ -18,7 +18,6 @@
   --baseColorWhite: #fff;
   --baseColorText: #515151;
   --baseColorBorder: #9e9e9e;
-  --baseAlert: #f73b6a;
 
   /* margin */
   --baseMargin: var(--baseSize);
@@ -27,4 +26,5 @@
   --colorPrimary: #4bd5f2;
   --colorSecondary: #2dd885;
   --colorHighlight: #f24b4b;
+  --colorAlert: #f73b6a;
 }
