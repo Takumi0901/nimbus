@@ -1,10 +1,11 @@
 /* Base
 --------------------------------------------------------- */
-html,body {
+html,
+body {
   overflow-y: hidden;
 }
 
-html{
+html {
   background: var(--baseColor);
 }
 
@@ -16,44 +17,40 @@ body {
   font-size: var(--baseFontSize);
   font-family: var(--baseFontFamily);
   line-height: var(--baseLineHeight);
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
 }
 
-address{
+address {
   font-style: normal;
 }
 
 a {
   cursor: pointer;
   color: var(--baseColorText);
-
-  &:link{
-    color: var(--baseColorText);
-  }
-
-  &:hover, &:focus, &:active {
-    color: color(var(--baseColorText) whiteness(20%));
-    text-decoration: none;
-  }
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: var(--baseFontSize);
   font-weight: normal;
   margin-bottom: var(--baseMargin);
 }
 
-p{
+p {
   margin-bottom: var(--baseMargin);
 }
 
-input[type="radio"]{
+input[type="radio"] {
   margin-left: calc(var(--baseMargin) * 2);
   margin-right: var(--baseMargin);
 }
 
 @media ( --viewportPc ) {
-  a:hover img{
+  a:hover img {
     @include opacity(.7);
   }
 }

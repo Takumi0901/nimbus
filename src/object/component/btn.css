@@ -11,23 +11,13 @@
   outline: none;
   position: relative;
   white-space: nowrap;
-
-&:link, &:active, &:hover, &:visited {
-                              color: #fff;
-                              text-decoration: none;
-                            }
-
-&.disabled,
-&[disabled],
- fieldset[disabled] & {
-   cursor: not-allowed;
-   opacity: .65;
- }
 }
 
-
-.c-btn {
-  &.--primary.--flat {
-    @mixin button-flat-color;
-  }
+.title,
+.content {
+  background: #fff;
+  font-size: 0.9em;
+  margin: 0;
+  display: flex;
+  touch-action: manipulation;
 }

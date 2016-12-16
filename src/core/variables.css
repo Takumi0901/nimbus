@@ -8,7 +8,7 @@
   @custom-media --viewportPc (max-width: 768px);
 
   /* font */
-  --baseFontFamily: Arial,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+  --baseFontFamily: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --baseFontSize: 12px;
   --baseLineHeight: 1.4;
 

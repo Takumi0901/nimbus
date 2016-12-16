@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "number-leading-zero": null,
+    "font-family-no-duplicate-names": null,
+    "no-missing-end-of-source-newline": null,
+    "selector-pseudo-element-colon-notation": null,
+    "declaration-empty-line-before": null,
+    "number-no-trailing-zeros": null,
+    "property-no-unknown": null
+  }
+}

@@ -6,11 +6,12 @@
   margin: calc(var(--baseMargin) * 2);
 }
 
-.c-alert{
-  > .__text{
-      font-size: 12px;
-    }
-  > .__text > .__icon{
-      font-size: 10px;
-    }
+.c-alert {
+  > .__text {
+    font-size: 12px;
+  }
+  > .__text > .__icon {
+    font-size: 10px;
+  }
+  transform: scale(2, 2);
 }

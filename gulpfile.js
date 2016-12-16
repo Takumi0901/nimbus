@@ -12,23 +12,27 @@ var gulp = require('gulp'),
     postcssExtend = require('postcss-extend'),
     postcssMedia = require('postcss-custom-media'),
     postcssMixins = require('postcss-mixins'),
-    postcssVars = require('postcss-simple-vars');
+    postcssVars = require('postcss-simple-vars'),
+    plumber = require('gulp-plumber'),
+    stylelint = require('stylelint'),
+    stylefmt = require('stylefmt'),
+    reporter = require('postcss-reporter');
 
 
 gulp.task('css', function() {
   var preProcessors = [
+    plumber,
     postcssImport,
     customProperties,
     postcssCalc,
     postcssColorFunction,
-    postcssExtend,
-    postcssMixins,
-    postcssNested,
     postcssMedia,
-    postcssVars
+    postcssNested
   ];
   var postProcessors = [
-    autoPrefixer
+    autoPrefixer,
+    stylelint,
+    reporter
   ];
 
   return gulp.src('./src/**.css')
