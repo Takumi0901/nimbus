@@ -9,13 +9,10 @@ var gulp = require('gulp'),
     postcssNested = require('postcss-nested'),
     postcssCalc = require('postcss-calc'),
     postcssColorFunction = require('postcss-color-function'),
-    postcssExtend = require('postcss-extend'),
     postcssMedia = require('postcss-custom-media'),
     postcssMixins = require('postcss-mixins'),
     postcssVars = require('postcss-simple-vars'),
     plumber = require('gulp-plumber'),
-    stylelint = require('stylelint'),
-    stylefmt = require('stylefmt'),
     reporter = require('postcss-reporter');
 
 

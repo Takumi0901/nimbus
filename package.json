@@ -1,5 +1,5 @@
 {
-  "name": "study-postcss",
+  "name": "nimbus",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,6 @@
     "postcss-nested": "^1.0.0",
     "postcss-reporter": "^2.0.0",
     "postcss-simple-vars": "^3.0.0",
-    "stylefmt": "^5.0.2",
     "stylelint": "^7.6.0",
     "stylelint-config-standard": "^15.0.0"
   }
