@@ -1,6 +1,61 @@
-なんだよSassで落ち着くのかと思ったのに
+## PostCSSとは
 
-メジャーなcss frameworkのBootstrapはver5からpostcssに、Foundationもcssnextを検討している。
+>PostCSSとは、JavaScriptで書かれた次世代CSSを変換するためのツールです。
+ PostCSSは、ES2015を現行のJavaScriptにトランスポートする「Babel」と同じで、未来のcssを現行のcssに翻訳してくれます。
+ PostCSS自体は、はあくまで変換するツールで、必要な機能をプラグインとして自分で取捨選択し、機能拡張していきます。
+ 
+ [未来を先取るPostCSS | CodeCode](http://codecodeweb.com/blog/199)
+
+## IntelliJのError問題
+
+拡張子を.pcssにすると解決
+
+## postcss-simple-varsのError問題
+
+## 使ったプラグイン
+
+### autoprefixer
+
+説明不要
+
+### postcss-calc
+
+calc関数
+
+### postcss-nested
+
+ネスト
+
+### postcss-import
+
+インポートできるようにする
+
+### postcss-custom-media
+
+メディアクエリの定義を変数化
+
+### postcss-custom-properties
+
+変数
+
+### postcss-color-function
+
+プラグインは新しいcolor()関数
+
+### cssnano
+
+CSSの最適化
+
+### postcss-simple-vars
+
+$の変数，mixin専用にしておいた
+
+### postcss-mixins
+
+mixinができる
+
+
+
 
 
 ## 参考

@@ -1,0 +1,11 @@
+@define-mixin social-icon $name {
+  background: $name;
+
+  &:hover {
+    background: color($name whiteness(+10%));
+  }
+}
+
+.btn {
+  @mixin social-icon #000;
+}

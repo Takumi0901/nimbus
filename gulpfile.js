@@ -22,44 +22,35 @@ var gulp = require('gulp'),
 gulp.task('css', function() {
   var preProcessors = [
     plumber,
+    postcssVars,
     postcssImport,
     customProperties,
+    postcssMixins,
     postcssCalc,
     postcssColorFunction,
     postcssMedia,
     postcssNested
   ];
   var postProcessors = [
-    autoPrefixer,
-    stylelint,
-    reporter
+    autoPrefixer
   ];
 
-  return gulp.src('./src/**.css')
+  return gulp.src('./src/**.pcss')
     .pipe(postcss(preProcessors))
     .pipe(postcss(postProcessors))
-    .pipe(gulp.dest('./dest/css'));
-});
-
-gulp.task('css:min', function() {
-
-  return gulp.src('./dest/css/app.css')
     .pipe(sourcemaps.init())
-    .pipe(postcss([cssNano]))
+    // .pipe(postcss([cssNano]))
     .pipe(rename('app.min.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./assets/css'));
 });
 
 /**
  * watch
  */
 gulp.task('watch', function(){
-    gulp.watch('./src/**/**/**.css', function(event) {
+    gulp.watch('./src/**/**/**.pcss', function(event) {
         gulp.run('css');
-    });
-    gulp.watch('./dest/css/**.css', function(event) {
-        gulp.run('css:min');
     });
 });
 
