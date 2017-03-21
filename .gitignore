@@ -1,5 +1,6 @@
 dest/
 assets/css/
+.DS_Store
 
 
 # npm

@@ -1,0 +1,27 @@
+.c-card {
+  display: block;
+  width: 100%;
+  background: var(--colorWhite);
+  margin-bottom: calc(var(--baseMargin) * 2);
+  position: relative;
+  box-shadow: 0 0 10px var(--colorDefaultAlpha3);
+}
+
+.c-card__header {
+  border-bottom: 1px solid var(--colorDefaultLigten2);
+  padding: calc(var(--baseMargin) * 2);
+}
+
+.c-card__content {
+  padding: calc(var(--baseMargin) * 4);
+
+  &--border {
+    border-top: 1px solid var(--colorDefaultLigten2);
+  }
+}
+
+.c-card__bottom {
+  border-top: 1px solid var(--colorDefaultLigten2);
+  padding: calc(var(--baseMargin) * 2);
+  margin: 0;
+}

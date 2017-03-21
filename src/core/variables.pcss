@@ -2,29 +2,88 @@
   /* base */
   --baseSize: 8px;
   --maxWidth: 1200px;
-  --breakPoint: 768px;
 
   /* viewport */
-  @custom-media --viewportPc (max-width: 768px);
+  @custom-media --viewportPc (min-width: 768px);
+  @custom-media --viewportSp (max-width: 768px);
 
   /* font */
-  --baseFontFamily: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  --baseFontSize: 12px;
-  --baseLineHeight: 1.4;
+  --baseFontFamily: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  --baseFontSize: 62.5%;
+  --baseLineHeight: 1.6;
+
+  /*font-size*/
+  --fontSizeH1: 3.4rem;
+  --fontSizeH2: 3.0rem;
+  --fontSizeH3: 2.6rem;
+  --fontSizeH4: 2.2rem;
+  --fontSizeH5: 1.8rem;
+  --fontSizeH6: 1.4rem;
+  --fontSizeDefault: 1.2rem;
+
+  /*middleLine*/
+  --largeHeight: 96px;
+  --middleHeight: 56px;
+  --smallHeight: 44px;
+
+  /*z-index*/
+  --layerForeFront: 9000;
+  --layerFront: 6000;
+  --layerMiddle: 3000;
+  --layerBack: 1000;
+  --layerForeBack: 100;
 
   /* baseColor */
-  --baseColor: #f1f1f1;
-  --baseColorLighten: #f9f9f9;
-  --baseColorWhite: #fff;
-  --baseColorText: #515151;
-  --baseColorBorder: #9e9e9e;
+  --baseColor: #fff;
+  --baseColorText: #333;
+  --baseColorLinnk: #0275d8;
+
+  /* contentColor */
+  --colorDefault: #ccc;
+  --colorWhite: #fff;
+  --colorPrimary: #4bd5f2;
+  --colorSecondary: #2dd885;
+  --colorHighlight: #f24b4b;
+
+  /* contentColor default */
+  --colorDefaultDarken1: color(var(--colorDefault) lightness(50%));
+  --colorDefaultDarken2: color(var(--colorDefault) lightness(30%));
+  --colorDefaultLigten1: color(var(--colorDefault) lightness(80%));
+  --colorDefaultLigten2: color(var(--colorDefault) lightness(95%));
+  --colorDefaultAlpha1: color(var(--colorDefault) alpha(50%));
+  --colorDefaultAlpha2: color(var(--colorDefault) alpha(60%));
+  --colorDefaultAlpha3: color(var(--colorDefault) alpha(70%));
+
+  /* contentColor primary */
+  --colorPrimaryDarken1: color(var(--colorPrimary) lightness(50%));
+  --colorPrimaryDarken2: color(var(--colorPrimary) lightness(30%));
+  --colorPrimaryLigten1: color(var(--colorPrimary) lightness(80%));
+  --colorPrimaryLigten2: color(var(--colorPrimary) lightness(95%));
+
+  /* contentColor secondary */
+  --colorSecondaryDarken1: color(var(--colorSecondary) lightness(50%));
+  --colorSecondaryDarken2: color(var(--colorSecondary) lightness(30%));
+  --colorSecondaryLigten1: color(var(--colorSecondary) lightness(80%));
+  --colorSecondaryLigten2: color(var(--colorSecondary) lightness(95%));
+
+  /* contentColor highlight */
+  --colorHighlightDarken1: color(var(--colorHighlight) lightness(50%));
+  --colorHighlightDarken2: color(var(--colorHighlight) lightness(30%));
+  --colorHighlightLigten1: color(var(--colorHighlight) lightness(80%));
+  --colorHighlightLigten2: color(var(--colorHighlight) lightness(95%));
+
+  /*font-color*/
+  --fontColorDefault: color(var(--baseColorText) lightness(40%));
+  --fontColorDark: var(--baseColorText);
+  --fontColorLight: color(var(--baseColorText) lightness(60%));
 
   /* margin */
   --baseMargin: var(--baseSize);
 
-  /* contentColor */
-  --colorPrimary: #4bd5f2;
-  --colorSecondary: #2dd885;
-  --colorHighlight: #f24b4b;
-  --colorAlert: #f73b6a;
+  /*grid*/
+  --gridCol: 12;
+  --gridMaxWidth: 100%;
+  --gridColGutters: 2%;
+  --gridColWidth: calc(var(--gridMaxWidth) / var(--gridCol));
+  --gridColWidthGutters: calc((var(--gridMaxWidth) + var(--gridColGutters)) / var(--gridCol));
 }

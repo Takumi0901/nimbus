@@ -1,0 +1,15 @@
+/* wrapper
+--------------------------------------------------------- */
+.l-wrapper {
+  max-width: var(--maxWidth);
+  min-height: 460px;
+  margin: 0 auto;
+  padding: 0 0 calc(var(--baseMargin) * 6);
+  display: block;
+}
+
+@media (--viewportPc) {
+  .l-wrapper {
+    margin: calc(var(--baseMargin) * 2) auto 0;
+  }
+}

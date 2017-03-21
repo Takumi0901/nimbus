@@ -13,28 +13,26 @@ var gulp = require('gulp'),
     postcssMixins = require('postcss-mixins'),
     postcssVars = require('postcss-simple-vars'),
     plumber = require('gulp-plumber'),
-    reporter = require('postcss-reporter');
+    reporter = require('postcss-reporter'),
+    atVariables = require('postcss-at-rules-variables'),
+    postcssFor = require('postcss-for'),
+    cssNext = require('postcss-cssnext')
+    scss = require('postcss-scss');
 
 
 gulp.task('css', function() {
   var preProcessors = [
-    plumber,
-    postcssVars,
-    postcssImport,
-    customProperties,
-    postcssMixins,
-    postcssCalc,
-    postcssColorFunction,
-    postcssMedia,
-    postcssNested
+    postcssImport(),
+    postcssNested(),
+    cssNext()
   ];
   var postProcessors = [
     autoPrefixer
   ];
 
   return gulp.src('./src/**.pcss')
+    .pipe(plumber())
     .pipe(postcss(preProcessors))
-    .pipe(postcss(postProcessors))
     .pipe(sourcemaps.init())
     // .pipe(postcss([cssNano]))
     .pipe(rename('app.min.css'))

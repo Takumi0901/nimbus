@@ -1,0 +1,38 @@
+.c-hero {
+  margin: 0 0 calc(var(--baseMargin) * 4);
+  position: relative;
+  color: var(--colorWhite);
+
+  &--basic {
+    background: linear-gradient(270deg, var(--colorPrimary), var(--colorSecondary));
+    background-size: 400% 400%;
+    position: relative;
+  }
+
+  &--anim {
+    animation: bgAnimation 30s ease infinite;
+  }
+
+  &--image {
+    background-size: 120%;
+    height: 300px;
+    background-position: 0 bottom;
+  }
+}
+
+.c-hero__inner {
+  width: auto;
+  padding: calc(var(--baseMargin) * 4) calc(var(--baseMargin) * 2);
+  min-height: 200px;
+}
+
+@media (--viewportPc) {
+  .c-hero--image {
+    height: 400px;
+  }
+
+  .c-hero__inner {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+  }
+}

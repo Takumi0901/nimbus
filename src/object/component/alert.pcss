@@ -1,14 +1,10 @@
 .c-alert {
-  color: var(--colorAlert);
-  background: color(var(--colorAlert) whiteness(80%));
-  border: solid 1px color(var(--colorAlert) whiteness(60%));
+  color: var(--colorHighlight);
+  background: color(var(--colorHighlight) whiteness(80%));
+  border: solid 1px color(var(--colorHighlight) whiteness(60%));
   padding: var(--baseMargin) calc(var(--baseMargin) * 2);
-  margin: calc(var(--baseMargin) * 2);
-}
 
-.c-alert {
-  &:hover {
-    color: #000;
-    font-size: 20px;
+  &__strong {
+    font-weight: 600;
   }
 }
