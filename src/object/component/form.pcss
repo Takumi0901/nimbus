@@ -1,0 +1,141 @@
+.c-form {
+  input[type=text],
+  input[type=url],
+  input[type=tel],
+  input[type=password],
+  input[type=email],
+  textarea,
+  select {
+    background: var(--colorWhite);
+    display: inline-block;
+    border: solid 1px var(--colorDefaultLigten2);
+    padding: calc(var(--baseMargin) * 2);
+    width: 100%;
+    -webkit-appearance: none;
+    font-size: 14px;
+    border-radius: 1px;
+  }
+
+  .c-form__title {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    margin: -1.2em var(--baseMargin) 0;
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+
+.c-form__select {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.c-form__select label:after {
+  bottom: 30%;
+  right: 16px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: var(--colorDefaultDarken2);
+  border-width: 6px;
+  margin-left: 6px;
+}
+
+.c-form input[type=radio],
+.c-form input[type=checkbox] {
+   display: inline-block;
+   margin-right: 6px;
+  }
+
+.c-form input[type=radio] + label,
+.c-form input[type=checkbox] + label,
+.c-form label input[type=checkbox] {
+  position: relative;
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 14px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+
+.c-form input[type=radio],
+.c-form input[type=checkbox] {
+  display: none;
+  margin: 0;
+}
+
+.c-form input[type=radio] + label,
+.c-form input[type=checkbox] + label,
+.c-form label input[type=checkbox] {
+    padding: 0 0 0 24px;
+  }
+
+.c-form input[type=radio] + label::before,
+.c-form input[type=checkbox] + label::before,
+.c-form label input[type=checkbox]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    background-color: white;
+  }
+
+.c-form input[type=radio] + label::before {
+    border: 2px solid #c2ced2;
+    border-radius: 30px;
+  }
+
+.c-form input[type=checkbox] + label::before,
+.c-form label input[type=checkbox]::before {
+    border: 2px solid #c2ced2;
+  }
+
+.c-form input[type=radio]:checked + label::after,
+.c-form input[type=checkbox]:checked + label::after,
+.c-form label input[type=checkbox]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+  }
+
+.c-form input[type=radio]:checked + label::after {
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    background: var(--colorPrimary);
+    border-radius: 8px;
+  }
+
+.c-form input[type=checkbox]:checked + label::after,
+.c-form label input[type=checkbox]:checked::after {
+    left: 3px;
+    width: 16px;
+    height: 8px;
+    margin-top: -8px;
+    border-left: 3px solid var(--colorPrimary);
+    border-bottom: 3px solid var(--colorPrimary);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
