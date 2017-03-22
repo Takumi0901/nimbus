@@ -203,7 +203,7 @@
 
   <div class="c-container">
     <h1>Grid</h1>
-    <div class="c-grid c-grid--gutters c-grid--query">
+    <div class="c-grid c-grid--gutters">
       <div class="c-grid__col c-grid__col--1of12">
         <div style="background: #ccc; padding: 10px;">Col</div>
       </div>
@@ -222,7 +222,6 @@
       <div class="c-grid__col c-grid__col--1of12">
         <div style="background: #ccc; padding: 10px;">Col</div>
       </div>
-
       <div class="c-grid__col c-grid__col--1of12">
         <div style="background: #ccc; padding: 10px;">Col</div>
       </div>
@@ -242,10 +241,81 @@
         <div style="background: #ccc; padding: 10px;">Col</div>
       </div>
     </div>
+
+    <div class="c-grid c-grid--gutters">
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+    </div>
+
+    <div class="c-grid c-grid--gutters">
+      <div class="c-grid__col c-grid__col--3of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--3of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--3of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--3of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+    </div>
+
+    <div class="c-grid c-grid--gutters">
+      <div class="c-grid__col c-grid__col--4of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--4of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--4of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+    </div>
+
+    <div class="c-grid c-grid--gutters">
+      <div class="c-grid__col c-grid__col--5of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--5of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--2of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+    </div>
+
+    <div class="c-grid c-grid--gutters">
+      <div class="c-grid__col c-grid__col--6of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+      <div class="c-grid__col c-grid__col--6of12">
+        <div style="background: #ccc; padding: 10px;">Col</div>
+      </div>
+    </div>
   </div>
 
   <div class="c-container">
     <h1>Table</h1>
+
+    <h2>Basic</h2>
     <table class="c-table c-table--basic u-mb-32">
       <tr>
         <th>title</th>
@@ -263,71 +333,72 @@
         <th>title</th>
         <td>description</td>
       </tr>
-
     </table>
 
+    <h2>Separate</h2>
     <table class="c-table c-table--separate u-mb-32">
       <thead>
-      <tr>
-        <th>お部屋</th>
-        <th>宿泊料金</th>
-        <th>広さ</th>
-        <th>タイプ</th>
-        <th>その他</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td data-label="お部屋">ダブル</td>
-        <td data-label="宿泊料金">15,000円</td>
-        <td data-label="広さ">25m²</td>
-        <td data-label="タイプ">洋室</td>
-        <td data-label="その他">朝食付き</td>
-      </tr>
-      <tr>
-        <td data-label="お部屋">ツイン</td>
-        <td data-label="宿泊料金">18,500円</td>
-        <td data-label="広さ">30m²</td>
-        <td data-label="タイプ">和室</td>
-        <td data-label="その他">朝・夕食付</td>
-      </tr>
+        <tr>
+          <th>Title1</th>
+          <th>Title2</th>
+          <th>Title3</th>
+          <th>Title4</th>
+          <th>Title5</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td data-label="Title1">description1</td>
+          <td data-label="Title2">description2</td>
+          <td data-label="Title3">description3</td>
+          <td data-label="Title4">description4</td>
+          <td data-label="Title5">description5</td>
+        </tr>
+        <tr>
+          <td data-label="Title1">description1</td>
+          <td data-label="Title2">description2</td>
+          <td data-label="Title3">description3</td>
+          <td data-label="Title4">description4</td>
+          <td data-label="Title5">description5</td>
+        </tr>
       </tbody>
     </table>
 
+    <h2>Overflow</h2>
     <table class="c-table c-table--overflow u-mb-32">
       <thead>
-      <tr>
-        <th>種類</th>
-        <th>色</th>
-        <th>値段</th>
-        <th>生産地</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>りんご</td>
-        <td>あか</td>
-        <td>200円</td>
-        <td>青森県</td>
-      </tr>
-      <tr>
-        <td>みかん</td>
-        <td>オレンジ</td>
-        <td>350円</td>
-        <td>愛媛県</td>
-      </tr>
-      <tr>
-        <td>ぶどう</td>
-        <td>むらさき</td>
-        <td>400円</td>
-        <td>山梨県</td>
-      </tr>
-      <tr>
-        <td>メロン</td>
-        <td>きみどり</td>
-        <td>800円</td>
-        <td>北海道</td>
-      </tr>
+        <tr>
+          <th>Type</th>
+          <th>Color</th>
+          <th>Price</th>
+          <th>Area</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>Red</td>
+          <td>200</td>
+          <td>Aomori</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>Orange</td>
+          <td>350</td>
+          <td>Ehime</td>
+        </tr>
+        <tr>
+          <td>Grape</td>
+          <td>Purple</td>
+          <td>400</td>
+          <td>Yamanasi</td>
+        </tr>
+        <tr>
+          <td>Melon</td>
+          <td>Yellow green</td>
+          <td>800</td>
+          <td>hokkaido</td>
+        </tr>
       </tbody>
     </table>
 
