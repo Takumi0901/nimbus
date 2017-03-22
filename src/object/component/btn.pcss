@@ -87,6 +87,31 @@
   }
 }
 
+/* Secondary
+----------------------------------------------------*/
+.c-btn--info {
+  color: var(--colorWhite) !important;
+  background-color: var(--colorInfo);
+
+  &:link {
+    color: var(--colorWhite) !important;
+    background-color: background;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--colorWhite) !important;
+    background-color: color(var(--colorInfo) lightness(45%));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: var(--colorInfo);
+  }
+}
+
 
 /* Highlight
 ----------------------------------------------------*/
