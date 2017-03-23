@@ -1,5 +1,7 @@
 .c-clamp {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   overflow: hidden;
 
   &--size-2 {
@@ -12,5 +14,17 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     height: 5em;
+  }
+
+  &--size-4 {
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 6em;
+  }
+
+  &--size-5 {
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    height: 8em;
   }
 }

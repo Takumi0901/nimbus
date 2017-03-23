@@ -6,14 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/app.min.css">
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js" type="text/javascript"></script>
+  <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+  </script>
+
+  <style>
+    .syntaxhighlighter {
+      padding: 8px 0;
+    }
+  </style>
+
 </head>
 <body>
-<div class="c-bar c-bar--shadow-bottom">
+<div class="c-bar c-bar--shadow-bottom c-bar--fixed-top">
   <div class="c-bar__inner">
     <h1><img src="./assets/image/logo.png" alt="" width="200"></h1>
   </div>
 </div>
-<div class="c-hero c-hero--image" style="background-image: url('./assets/image/hero.jpg');">
+<div class="c-hero c-hero--image c-hero--pt-large" style="background-image: url('./assets/image/hero.jpg');">
   <div class="c-hero__inner">
     <h2 class="c-text--white">Hero Title</h2>
     <p class="u-mb-0">
@@ -23,230 +40,557 @@
 </div>
 
 <div class="l-wrapper">
-  <div class="c-container">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-  </div>
+  <div class="c-grid c-grid--gutters c-grid--query">
+    <div class="c-grid__col c-grid__col--9of12">
+      <div class="c-container">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
 
-  <div class="c-container">
-    <h1>Paragraph</h1>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
-  </div>
-
-  <div class="c-container">
-    <h1>Address</h1>
-    <address>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</address>
-  </div>
-
-  <div class="c-container">
-    <h1>List</h1>
-    <ul>
-      <li>List</li>
-      <li>List</li>
-      <li>List</li>
-    </ul>
-    <ol>
-      <li>List</li>
-      <li>List</li>
-      <li>List</li>
-    </ol>
-  </div>
-
-  <div class="c-container">
-    <h1>dl, dt, dd</h1>
-    <dl>
-      <dt>Title</dt>
-      <dd>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-      </dd>
-    </dl>
-
-    <dl>
-      <dt>Title</dt>
-      <dd>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-      </dd>
-      <dd>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-      </dd>
-    </dl>
-  </div>
-
-  <div class="c-container">
-    <h1>Anchor</h1>
-    <p><a href="#">Anchor</a></p>
-  </div>
-
-  <div class="c-container">
-    <h1>Alert</h1>
-    <div class="c-alert">
-      <span class="c-alert__strong">Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem
-    </div>
-  </div>
-
-  <div class="c-container">
-    <h1>Bar</h1>
-    <div class="c-bar c-bar--shadow-bottom">
-      <div class="c-bar__inner">Bar</div>
-    </div>
-    <div class="c-bar c-bar--primary c-bar--shadow-bottom">
-      <div class="c-bar__inner">Bar</div>
-    </div>
-  </div>
-
-  <div class="c-container">
-    <h1>Button</h1>
-    <p><button class="c-btn">T</button>
-      <a href="#" class="c-btn">T</a></p>
-    <p>
-      <button class="c-btn">default</button>
-      <button class="c-btn c-btn--primary">primary</button>
-      <button class="c-btn c-btn--secondary">secondary</button>
-      <button class="c-btn c-btn--info">info</button>
-      <button class="c-btn c-btn--highlight">highlight</button>
-    </p>
-
-    <p>
-      <button class="c-btn c-btn--primary c-btn--jumbo">Button</button>
-      <button class="c-btn c-btn--primary c-btn--large">Button</button>
-      <button class="c-btn c-btn--primary c-btn--small">Button</button>
-      <button class="c-btn c-btn--primary c-btn--tiny">Button</button>
-    </p>
-
-    <p>
-      <button class="c-btn c-btn--primary c-btn--block">primary</button>
-    </p>
-  </div>
-
-  <div class="c-container">
-    <h1>Card</h1>
-    <div class="c-card">
-      <div class="c-card__header">
-        <h2 class="u-mb-0">Title</h2>
+        <pre class="brush: html;">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        </pre>
       </div>
-      <div class="c-card__content">
-        <p class="u-mb-0">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-        </p>
+
+      <div class="c-container">
+        <h1>Paragraph</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+
+        <pre class="brush: html;">
+        <p>Paragraph</p>
+        </pre>
+
       </div>
-      <div class="c-card__bottom">
-        <p class="u-mb-0">
-          Bottom
-        </p>
+
+      <div class="c-container">
+        <h1>Address</h1>
+        <address>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</address>
+
+        <pre class="brush: html;">
+        <address>Address</address>
+        </pre>
       </div>
-    </div>
-  </div>
 
-
-  <div class="c-container">
-    <h1>Clamp</h1>
-    <p class="c-clamp c-clamp--size-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
-  </div>
-
-  <div class="c-container">
-    <h1>Hero</h1>
-    <div class="c-hero c-hero--basic c-hero--anim">
-      <div class="c-hero__inner">
-        <h2 class="c-text--white">Hero Title</h2>
-        <p class="u-mb-0">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="c-container">
-    <h1>Label</h1>
-    <span class="c-label">Default</span>
-    <span class="c-label c-label--primary">Primary</span>
-    <span class="c-label c-label--secondary">Secondary</span>
-    <span class="c-label c-label--info">Info</span>
-    <span class="c-label c-label--highlight">Highlight</span>
-  </div>
-
-  <div class="c-container">
-    <h1>Media</h1>
-    <div class="c-media">
-      <div class="c-media__content">
-        <img src="./assets/image/thumb.jpg" alt="" width="150" height="150">
-      </div>
-      <div class="c-media__content">
-        <p class="u-mb-0">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="c-container">
-    <h1>Menu</h1>
-    <ul class="c-menu">
-      <li class="c-menu__item"><a href="#" class="is-active">Menu 1</a></li>
-      <li class="c-menu__item"><a href="#">Menu 1</a></li>
-      <li class="c-menu__item"><a href="#">Menu 1</a></li>
-      <li class="c-menu__item"><a href="#">Menu 1</a></li>
-    </ul>
-  </div>
-
-  <div class="c-container">
-    <h1>Nav</h1>
-    <div class="c-bar">
-      <div class="c-bar__inner">
-        <ul class="c-nav">
-          <li class="c-nav__item"><a href="#">Menu 1</a></li>
-          <li class="c-nav__item"><a href="#">Menu 1</a></li>
-          <li class="c-nav__item"><a href="#">Menu 1</a></li>
+      <div class="c-container">
+        <h1>List</h1>
+        <ul>
+          <li>List</li>
+          <li>List</li>
+          <li>List</li>
         </ul>
+        <ol>
+          <li>List</li>
+          <li>List</li>
+          <li>List</li>
+        </ol>
+
+        <pre class="brush: html;">
+        <ul>
+          <li>List</li>
+          <li>List</li>
+          <li>List</li>
+        </ul>
+        <ol>
+          <li>List</li>
+          <li>List</li>
+          <li>List</li>
+        </ol>
+        </pre>
       </div>
-    </div>
-  </div>
 
-  <div class="c-container">
-    <h1>Form</h1>
-    <div class="c-form">
-      <h3 class="c-form__title">Input <span class="c-form__icon c-label c-label--required">required</span></h3>
-      <p><input type="text" placeholder="text"></p>
+      <div class="c-container">
+        <h1>dl, dt, dd</h1>
+        <dl>
+          <dt>Title</dt>
+          <dd>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          </dd>
+        </dl>
 
-      <h3>Textarea</h3>
-      <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+        <dl>
+          <dt>Title</dt>
+          <dd>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          </dd>
+          <dd>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          </dd>
+        </dl>
 
-      <h3>Select</h3>
-      <p class="c-form__select u-mb-24">
-        <label><select>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select></label>
-      </p>
-      <h3>Checkbox</h3>
-      <p>
-        <input type="checkbox" name="checkbox" id="checkbox1"><label for="checkbox1">checkbox1</label>
-        <input type="checkbox" name="checkbox" id="checkbox2"><label for="checkbox2">checkbox2</label>
-      </p>
-      <h3>Radio</h3>
-      <p>
-        <input type="radio" name="radio" id="radio1"><label for="radio1">radio1</label>
-        <input type="radio" name="radio" id="radio2"><label for="radio2">radio2</label>
-      </p>
+        <pre class="brush: html;">
+        <dl>
+          <dt>Title</dt>
+          <dd>
+            Description
+          </dd>
+        </dl>
+        </pre>
+      </div>
 
-      <h2>Table Form</h2>
-      <table class="c-table c-table--basic u-mb-32">
-        <tr>
-          <th class="c-form__title">
-            input
-            <span class="c-form__icon c-form__icon--right c-label c-label--required">required</span>
-          </th>
-          <td><input type="text" placeholder="text"></td>
-        </tr>
-        <tr>
-          <th>Select</th>
-          <td>
+      <div class="c-container">
+        <h1>Anchor</h1>
+        <p><a href="#">Anchor</a></p>
+
+        <pre class="brush: html;">
+        <a href="#">Anchor</a>
+        </pre>
+      </div>
+
+      <div class="c-container">
+        <h1>Alert</h1>
+        <div class="c-alert">
+          <span class="c-alert__strong">Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem
+        </div>
+
+        <pre class="brush: html;">
+        <div class="c-alert">
+          <span class="c-alert__strong">Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem
+        </div>
+        </pre>
+
+      </div>
+
+      <div class="c-container">
+        <h1>Bar</h1>
+        <div class="c-bar c-bar--shadow-bottom">
+          <div class="c-bar__inner">Bar</div>
+        </div>
+
+        <pre class="brush: html;">
+        <div class="c-bar c-bar--shadow-bottom">
+          <div class="c-bar__inner">Bar</div>
+        </div>
+        </pre>
+
+        <h3>Modifier</h3>
+        <table class="c-table">
+          <tr>
+            <th>Shadow</th>
+            <td>
+              <span>c-bar--shadow-top</span><br/>
+              <span>c-bar--shadow-bottom</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Size</th>
+            <td>
+              <span>c-bar--medium</span><br/>
+              <span>c-bar--small</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>
+              <span>c-bar--primary</span><br/>
+              <span>c-bar--secondary</span><br/>
+              <span>c-bar--info</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Fixed</th>
+            <td>
+              <span>c-bar--fixed-top</span><br/>
+              <span>c-bar--fixed-bottom</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="c-container">
+        <h1>Button</h1>
+        <div class="u-mb-32">
+          <p>
+            <button class="c-btn">T</button>
+            <a href="#" class="c-btn">T</a>
+          </p>
+
+          <pre class="brush: html;">
+          <button class="c-btn">T</button>
+          <a href="#" class="c-btn">T</a>
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>Color</h3>
+          <p>
+            <button class="c-btn">default</button>
+            <button class="c-btn c-btn--primary">primary</button>
+            <button class="c-btn c-btn--secondary">secondary</button>
+            <button class="c-btn c-btn--info">info</button>
+            <button class="c-btn c-btn--highlight">highlight</button>
+          </p>
+
+          <pre class="brush: html;">
+          <button class="c-btn">default</button>
+          <button class="c-btn c-btn--primary">primary</button>
+          <button class="c-btn c-btn--secondary">secondary</button>
+          <button class="c-btn c-btn--info">info</button>
+          <button class="c-btn c-btn--highlight">highlight</button>
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>Size</h3>
+          <p>
+            <button class="c-btn c-btn--primary c-btn--jumbo">Button</button>
+            <button class="c-btn c-btn--primary c-btn--large">Button</button>
+            <button class="c-btn c-btn--primary c-btn--small">Button</button>
+            <button class="c-btn c-btn--primary c-btn--tiny">Button</button>
+          </p>
+
+          <pre class="brush: html;">
+          <button class="c-btn c-btn--primary c-btn--jumbo">Button</button>
+          <button class="c-btn c-btn--primary c-btn--large">Button</button>
+          <button class="c-btn c-btn--primary c-btn--small">Button</button>
+          <button class="c-btn c-btn--primary c-btn--tiny">Button</button>
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>Display</h3>
+          <p>
+            <button class="c-btn c-btn--primary c-btn--block">primary</button>
+          </p>
+
+          <pre class="brush: html;">
+          <button class="c-btn c-btn--primary c-btn--block">primary</button>
+          </pre>
+        </div>
+      </div>
+
+      <div class="c-container">
+        <h1>Card</h1>
+        <div class="c-card">
+          <div class="c-card__header">
+            <h2 class="u-mb-0">Title</h2>
+          </div>
+          <div class="c-card__content">
+            <p class="u-mb-0">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+          <div class="c-card__bottom">
+            <p class="u-mb-0">
+              Bottom
+            </p>
+          </div>
+        </div>
+
+        <pre class="brush: html;">
+          <div class="c-card">
+            <div class="c-card__header">
+              <h2 class="u-mb-0">Title</h2>
+            </div>
+            <div class="c-card__content">
+              <p class="u-mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              </p>
+            </div>
+            <div class="c-card__bottom">
+              <p class="u-mb-0">
+                Bottom
+              </p>
+            </div>
+          </div>
+        </pre>
+      </div>
+
+
+      <div class="c-container">
+        <h1>Clamp</h1>
+        <p class="c-clamp c-clamp--size-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+
+        <pre class="brush: html;">
+          <p class="c-clamp c-clamp--size-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+        </pre>
+
+        <h3>Modifier</h3>
+        <table class="c-table">
+          <tr>
+            <th>Size</th>
+            <td>
+              <span>c-clamp--size-2</span><br/>
+              <span>c-clamp--size-3</span><br/>
+              <span>c-clamp--size-4</span><br/>
+              <span>c-clamp--size-5</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="c-container">
+        <h1>Hero</h1>
+        <div class="c-hero c-hero--basic c-hero--anim">
+          <div class="c-hero__inner">
+            <h2 class="c-text--white">Hero Title</h2>
+            <p class="u-mb-0">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+        </div>
+
+        <pre class="brush: html;">
+          <div class="c-hero c-hero--basic c-hero--anim">
+            <div class="c-hero__inner">
+              <h2 class="c-text--white">Hero Title</h2>
+              <p class="u-mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              </p>
+            </div>
+          </div>
+        </pre>
+
+        <h3>Image</h3>
+        <pre class="brush: html;">
+          <div class="c-hero c-hero--image" style="background-image: url('./assets/image/hero.jpg');">
+            <div class="c-hero__inner">
+              <h2 class="c-text--white">Hero Title</h2>
+              <p class="u-mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              </p>
+            </div>
+          </div>
+        </pre>
+
+        <h3>Modifier</h3>
+        <table class="c-table">
+          <tr>
+            <th>Type</th>
+            <td>
+              <span>c-hero--basic</span><br/>
+              <span>c-hero--image</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Animation</th>
+            <td>
+              <span>c-hero--anim</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Other</th>
+            <td>
+              <span>c-hero--pt-large</span><br/>
+              <span>c-hero--pt-middle</span><br/>
+              <span>c-hero--pt-small</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="c-container">
+        <h1>Label</h1>
+        <span class="c-label">Default</span>
+        <span class="c-label c-label--primary">Primary</span>
+        <span class="c-label c-label--secondary">Secondary</span>
+        <span class="c-label c-label--info">Info</span>
+        <span class="c-label c-label--highlight">Highlight</span>
+
+        <pre class="brush: html;">
+          <span class="c-label">Default</span>
+          <span class="c-label c-label--primary">Primary</span>
+          <span class="c-label c-label--secondary">Secondary</span>
+          <span class="c-label c-label--info">Info</span>
+          <span class="c-label c-label--highlight">Highlight</span>
+        </pre>
+      </div>
+
+      <div class="c-container">
+        <h1>Media</h1>
+        <div class="c-media">
+          <div class="c-media__content">
+            <img src="./assets/image/thumb.jpg" alt="" width="150" height="150">
+          </div>
+          <div class="c-media__content">
+            <p class="u-mb-0">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+        </div>
+
+        <pre class="brush: html;">
+          <div class="c-media">
+            <div class="c-media__content">
+              <img src="./assets/image/thumb.jpg" alt="" width="150" height="150">
+            </div>
+            <div class="c-media__content">
+              <p class="u-mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              </p>
+            </div>
+          </div>
+        </pre>
+
+      </div>
+
+      <div class="c-container">
+        <h1>Menu</h1>
+        <ul class="c-menu">
+          <li class="c-menu__item"><a href="#" class="is-active">Menu 1</a></li>
+          <li class="c-menu__item"><a href="#">Menu 1</a></li>
+          <li class="c-menu__item"><a href="#">Menu 1</a></li>
+          <li class="c-menu__item"><a href="#">Menu 1</a></li>
+        </ul>
+
+        <pre class="brush: html;">
+          <ul class="c-menu">
+            <li class="c-menu__item"><a href="#" class="is-active">Menu 1</a></li>
+            <li class="c-menu__item"><a href="#">Menu 1</a></li>
+            <li class="c-menu__item"><a href="#">Menu 1</a></li>
+            <li class="c-menu__item"><a href="#">Menu 1</a></li>
+          </ul>
+        </pre>
+
+        <h3>Modifier</h3>
+        <table class="c-table">
+          <tr>
+            <th>Style</th>
+            <td>
+              <span>c-menu--border</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="c-container">
+        <h1>Nav</h1>
+        <div class="u-mb-32">
+          <div class="c-bar c-bar--shadow-bottom">
+            <ul class="c-nav">
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+            </ul>
+          </div>
+
+          <pre class="brush: html;">
+            <div class="c-bar c-bar--shadow-bottom">
+              <ul class="c-nav">
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              </ul>
+            </div>
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <div class="c-bar c-bar--medium c-bar--shadow-bottom">
+            <ul class="c-nav c-nav--medium">
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+            </ul>
+          </div>
+
+          <pre class="brush: html;">
+            <div class="c-bar c-bar--medium c-bar--shadow-bottom">
+              <ul class="c-nav c-nav--medium">
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              </ul>
+            </div>
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <div class="c-bar c-bar--small c-bar--shadow-bottom">
+            <ul class="c-nav c-nav--small">
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+            </ul>
+          </div>
+
+          <pre class="brush: html;">
+            <div class="c-bar c-bar--small c-bar--shadow-bottom">
+              <ul class="c-nav c-nav--small">
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              </ul>
+            </div>
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <div class="c-bar c-bar--small c-nav--len4 c-bar--shadow-bottom">
+            <ul class="c-nav c-nav--small">
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              <li class="c-nav__item"><a href="#">Menu 1</a></li>
+            </ul>
+          </div>
+
+          <pre class="brush: html;">
+            <div class="c-bar c-bar--small c-bar--shadow-bottom">
+              <ul class="c-nav c-nav--small u-cf">
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+                <li class="c-nav__item"><a href="#">Menu 1</a></li>
+              </ul>
+            </div>
+          </pre>
+        </div>
+
+        <h3>Modifier</h3>
+        <table class="c-table">
+          <tr>
+            <th>Size</th>
+            <td>
+              <span>c-nav--medium</span><br/>
+              <span>c-nav--small</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Length</th>
+            <td>
+              <span>c-nav--len3</span><br/>
+              <span>c-nav--len4</span><br/>
+              <span>c-nav--len5</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="c-container">
+        <h1>Form</h1>
+        <div class="c-form">
+          <div class="u-mb-32">
+            <h3 class="c-form__title">Input <span class="c-form__icon c-label c-label--required">required</span></h3>
+            <div><input type="text" placeholder="text"></div>
+
+            <pre class="brush: html;">
+              <div class="c-form">
+                <h3 class="c-form__title">Input
+                  <span class="c-form__icon c-label c-label--required">required</span>
+                </h3>
+                <div><input type="text" placeholder="text"></div>
+              </div>
+            </pre>
+          </div>
+
+          <div class="u-mb-32">
+            <h3>Textarea</h3>
+            <div><textarea cols="30" rows="10"></textarea></div>
+
+            <pre class="brush: html;">
+              <div class="c-form"><textarea cols="30" rows="10"></textarea></div>
+            </pre>
+          </div>
+
+          <div class="u-mb-32">
+            <h3>Select</h3>
             <div class="c-form__select">
               <label><select>
                 <option value="1">1</option>
@@ -256,238 +600,1111 @@
                 <option value="5">5</option>
               </select></label>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <th>Checkbox</th>
-          <td>
-            <div>
+
+            <pre class="brush: html;">
+              <div class="c-form">
+                <div class="c-form__select">
+                  <label><select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select></label>
+                </div>
+              </div>
+            </pre>
+          </div>
+
+          <div class="u-mb-32">
+            <h3>Checkbox</h3>
+            <p>
               <input type="checkbox" name="checkbox" id="checkbox1"><label for="checkbox1">checkbox1</label>
               <input type="checkbox" name="checkbox" id="checkbox2"><label for="checkbox2">checkbox2</label>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th>Radio</th>
-          <td>
-            <div>
+            </p>
+
+            <pre class="brush: html;">
+              <div class="c-form">
+                <input type="checkbox" name="checkbox" id=""><label for="">checkbox</label>
+              </div>
+            </pre>
+          </div>
+
+          <div class="u-mb-32">
+            <h3>Radio</h3>
+            <p>
               <input type="radio" name="radio" id="radio1"><label for="radio1">radio1</label>
               <input type="radio" name="radio" id="radio2"><label for="radio2">radio2</label>
+            </p>
+
+            <pre class="brush: html;">
+              <div class="c-form">
+                <input type="radio" name="radio" id=""><label for="">radio</label>
+              </div>
+            </pre>
+
+          </div>
+
+          <h2>Table Form</h2>
+          <table class="c-table c-table--basic u-mb-32">
+            <tr>
+              <th class="c-form__title">
+                input
+                <span class="c-form__icon c-form__icon--right c-label c-label--required">required</span>
+              </th>
+              <td><input type="text" placeholder="text"></td>
+            </tr>
+            <tr>
+              <th>Select</th>
+              <td>
+                <div class="c-form__select">
+                  <label><select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select></label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Checkbox</th>
+              <td>
+                <div>
+                  <input type="checkbox" name="checkbox" id="checkbox3"><label for="checkbox3">checkbox1</label>
+                  <input type="checkbox" name="checkbox" id="checkbox4"><label for="checkbox4">checkbox2</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Radio</th>
+              <td>
+                <div>
+                  <input type="radio" name="radio" id="radio3"><label for="radio3">radio1</label>
+                  <input type="radio" name="radio" id="radio4"><label for="radio4">radio2</label>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <pre class="brush: html;">
+            <div class="c-form">
+              <table class="c-table c-table--basic">
+                <tbody>
+                  <tr>
+                    <th class="c-form__title">
+                      input
+                      <span class="c-form__icon c-form__icon--right c-label c-label--required">required</span>
+                    </th>
+                    <td><input type="text" placeholder="text"></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </td>
-        </tr>
-      </table>
+          </pre>
 
-      <h3>Error</h3>
-      <p class="c-form__input-box is-error">
-        <input type="text" placeholder="text">
-        <span class="c-form__input-box__alert">必須項目です</span>
-      </p>
-      
+          <div class="u-mb-32">
+            <h3>Error</h3>
+            <p class="c-form__input-box is-error">
+              <input type="text" placeholder="text">
+              <span class="c-form__input-box__alert">必須項目です</span>
+            </p>
+
+            <pre class="brush: html;">
+              <div class="c-form">
+                <p class="c-form__input-box is-error">
+                  <input type="text" placeholder="text">
+                  <span class="c-form__input-box__alert">必須項目です</span>
+                </p>
+              </div>
+            </pre>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="c-container">
+        <h1>Grid</h1>
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--4of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--4of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--4of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--5of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--5of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--6of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--6of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <pre class="brush: html;">
+          <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--1of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--3of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--4of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--4of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--4of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--5of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--5of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--2of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+
+        <div class="c-grid c-grid--gutters">
+          <div class="c-grid__col c-grid__col--6of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+          <div class="c-grid__col c-grid__col--6of12">
+            <div style="background: #ccc; padding: 10px;">Col</div>
+          </div>
+        </div>
+        </pre>
+        
+        <h3>Modifier</h3>
+        <table class="c-table">
+          <tr>
+            <th>Vertical Align</th>
+            <td>
+              <span>c-grid--top</span><br/>
+              <span>c-grid--middle</span><br/>
+              <span>c-grid--top</span><br/>
+              <span>c-grid--stretch</span><br/>
+              <span>c-grid--baseline</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Align</th>
+            <td>
+              <span>c-grid--left</span><br/>
+              <span>c-grid--center</span><br/>
+              <span>c-grid--right</span><br/>
+              <span>c-grid--between</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Other</th>
+            <td>
+              <span>c-grid--row</span><br/>
+              <span>c-grid--reverse</span><br/>
+              <span>c-grid--gutters</span><br/>
+              <span>c-grid--query</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="c-container">
+        <h1>Table</h1>
+
+        <div class="u-mb-32">
+          <h2>Basic</h2>
+          <table class="c-table c-table--basic">
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+          </table>
+
+          <pre class="brush: html;">
+            <table class="c-table c-table--basic">
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+            <tr>
+              <th>title</th>
+              <td>description</td>
+            </tr>
+          </table>
+          </pre>
+        </div>
+
+        <h2>Separate</h2>
+        <div class="u-mb-32">
+          <table class="c-table c-table--separate">
+            <thead>
+              <tr>
+                <th>Title1</th>
+                <th>Title2</th>
+                <th>Title3</th>
+                <th>Title4</th>
+                <th>Title5</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td data-label="Title1">description1</td>
+                <td data-label="Title2">description2</td>
+                <td data-label="Title3">description3</td>
+                <td data-label="Title4">description4</td>
+                <td data-label="Title5">description5</td>
+              </tr>
+              <tr>
+                <td data-label="Title1">description1</td>
+                <td data-label="Title2">description2</td>
+                <td data-label="Title3">description3</td>
+                <td data-label="Title4">description4</td>
+                <td data-label="Title5">description5</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <pre class="brush: html;">
+            <table class="c-table c-table--separate">
+            <thead>
+              <tr>
+                <th>Title1</th>
+                <th>Title2</th>
+                <th>Title3</th>
+                <th>Title4</th>
+                <th>Title5</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td data-label="Title1">description1</td>
+                <td data-label="Title2">description2</td>
+                <td data-label="Title3">description3</td>
+                <td data-label="Title4">description4</td>
+                <td data-label="Title5">description5</td>
+              </tr>
+              <tr>
+                <td data-label="Title1">description1</td>
+                <td data-label="Title2">description2</td>
+                <td data-label="Title3">description3</td>
+                <td data-label="Title4">description4</td>
+                <td data-label="Title5">description5</td>
+              </tr>
+            </tbody>
+          </table>
+          </pre>
+
+        </div>
+
+        <div class="u-mb-32">
+          <h2>Overflow</h2>
+          <table class="c-table c-table--overflow">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Area</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>200</td>
+                <td>Aomori</td>
+              </tr>
+              <tr>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>350</td>
+                <td>Ehime</td>
+              </tr>
+              <tr>
+                <td>Grape</td>
+                <td>Purple</td>
+                <td>400</td>
+                <td>Yamanasi</td>
+              </tr>
+              <tr>
+                <td>Melon</td>
+                <td>Yellow green</td>
+                <td>800</td>
+                <td>hokkaido</td>
+              </tr>
+            </tbody>
+          </table>
+          <pre class="brush: html;">
+            <table class="c-table c-table--overflow">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Area</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Apple</td>
+                <td>Red</td>
+                <td>200</td>
+                <td>Aomori</td>
+              </tr>
+              <tr>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>350</td>
+                <td>Ehime</td>
+              </tr>
+              <tr>
+                <td>Grape</td>
+                <td>Purple</td>
+                <td>400</td>
+                <td>Yamanasi</td>
+              </tr>
+              <tr>
+                <td>Melon</td>
+                <td>Yellow green</td>
+                <td>800</td>
+                <td>hokkaido</td>
+              </tr>
+            </tbody>
+          </table>
+          </pre>
+        </div>
+      </div>
+
+      <div class="c-container">
+        <h1>Utility</h1>
+        <div class="u-mb-32">
+          <h3>border</h3>
+          <pre class="brush: css;">
+            .u-br-0 {
+              border: none !important;
+            }
+
+            .u-br-t-0 {
+              border-top: none !important;
+            }
+
+            .u-br-r-0 {
+              border-right: none !important;
+            }
+
+            .u-br-b-0 {
+              border-bottom: none !important;
+            }
+
+            .u-br-l-0 {
+              border-left: none !important;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>clearfix</h3>
+          <pre class="brush: css;">
+            .u-cf {
+              *zoom: 1;
+
+              &:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>display</h3>
+          <pre class="brush: css;">
+            .u-d-tb {
+              display: table !important;
+            }
+
+            .u-d-tbc {
+              display: table-cell !important;
+            }
+
+            .u-d-b {
+              display: block !important;
+            }
+
+            .u-d-ib {
+              display: inline-block !important;
+            }
+
+            .u-d-n{
+              display: none !important;
+            }
+
+            .u-d-pc {
+              display: none !important;
+            }
+
+            .u-d-sp {
+              display: block !important;
+            }
+
+            @media (--viewportPc) {
+              .u-d-pc {
+                display: block !important;
+              }
+
+              .u-d-sp {
+                display: none !important;
+              }
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>font-size</h3>
+          <pre class="brush: css;">
+            .u-fz-8 {
+              font-size: 0.8rem;
+            }
+
+            .u-fz-10 {
+              font-size: 1rem;
+            }
+
+            .u-fz-12 {
+              font-size: 1.2rem;
+            }
+
+            .u-fz-14 {
+              font-size: 1.4rem;
+            }
+
+            .u-fz-16 {
+              font-size: 1.6rem;
+            }
+
+            .u-fz-18 {
+              font-size: 1.8rem;
+            }
+
+            .u-fz-20 {
+              font-size: 2rem;
+            }
+
+            .u-fz-22 {
+              font-size: 2.2rem;
+            }
+
+            .u-fz-24 {
+              font-size: 2.4rem;
+            }
+
+            .u-fz-26 {
+              font-size: 2.6rem;
+            }
+
+            .u-fz-28 {
+              font-size: 2.8rem;
+            }
+
+            .u-fz-30 {
+              font-size: 3rem;
+            }
+
+            .u-fz-32 {
+              font-size: 3.2rem;
+            }
+
+            .u-fz-34 {
+              font-size: 3.4rem;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>margin</h3>
+          <pre class="brush: css;">
+            .u-m-c {
+              margin: 0 auto;
+            }
+
+            .u-mt-0 {
+              margin-top: 0;
+            }
+
+            .u-mt-8 {
+              margin-top: var(--baseMargin);
+            }
+
+            .u-mt-16 {
+              margin-top: calc(var(--baseMargin) * 2);
+            }
+
+            .u-mt-24 {
+              margin-top: calc(var(--baseMargin) * 3);
+            }
+
+            .u-mt-32 {
+              margin-top: calc(var(--baseMargin) * 4);
+            }
+
+            .u-mt-40 {
+              margin-top: calc(var(--baseMargin) * 5);
+            }
+
+            .u-mt-48 {
+              margin-top: calc(var(--baseMargin) * 6);
+            }
+
+            .u-mr-0 {
+              margin-right: 0;
+            }
+
+            .u-mr-8 {
+              margin-right: var(--baseMargin);
+            }
+
+            .u-mr-16 {
+              margin-right: calc(var(--baseMargin) * 2);
+            }
+
+            .u-mr-24 {
+              margin-right: calc(var(--baseMargin) * 3);
+            }
+
+            .u-mr-32 {
+              margin-right: calc(var(--baseMargin) * 4);
+            }
+
+            .u-mr-40 {
+              margin-right: calc(var(--baseMargin) * 5);
+            }
+
+            .u-mr-48 {
+              margin-right: calc(var(--baseMargin) * 6);
+            }
+
+            .u-mb-0 {
+              margin-bottom: 0;
+            }
+
+            .u-mb-8 {
+              margin-bottom: var(--baseMargin);
+            }
+
+            .u-mb-16 {
+              margin-bottom: calc(var(--baseMargin) * 2);
+            }
+
+            .u-mb-24 {
+              margin-bottom: calc(var(--baseMargin) * 3);
+            }
+
+            .u-mb-32 {
+              margin-bottom: calc(var(--baseMargin) * 4);
+            }
+
+            .u-mb-40 {
+              margin-bottom: calc(var(--baseMargin) * 5);
+            }
+
+            .u-mb-48 {
+              margin-bottom: calc(var(--baseMargin) * 6);
+            }
+
+            .u-ml-0 {
+              margin-left: 0;
+            }
+
+            .u-ml-8 {
+              margin-left: var(--baseMargin);
+            }
+
+            .u-ml-16 {
+              margin-left: calc(var(--baseMargin) * 2);
+            }
+
+            .u-ml-24 {
+              margin-left: calc(var(--baseMargin) * 3);
+            }
+
+            .u-ml-32 {
+              margin-left: calc(var(--baseMargin) * 4);
+            }
+
+            .u-ml-40 {
+              margin-left: calc(var(--baseMargin) * 5);
+            }
+
+            .u-ml-48 {
+              margin-left: calc(var(--baseMargin) * 6);
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>misc</h3>
+          <pre class="brush: css;">
+            .u-ws-nowrap {
+              white-space: nowrap;
+            }
+
+            .u-mx-img {
+              max-width: 100%;
+            }
+
+            .u-tx-inside {
+              text-indent: -1em;
+              margin-left: 1em;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>padding</h3>
+          <pre class="brush: css;">
+            .u-pt-0 {
+              padding-top: 0;
+            }
+
+            .u-pt-8 {
+              padding-top: var(--baseMargin);
+            }
+
+            .u-pt-16 {
+              padding-top: calc(var(--baseMargin) * 2);
+            }
+
+            .u-pt-24 {
+              padding-top: calc(var(--baseMargin) * 3);
+            }
+
+            .u-pt-32 {
+              padding-top: calc(var(--baseMargin) * 4);
+            }
+
+            .u-pt-40 {
+              padding-top: calc(var(--baseMargin) * 5);
+            }
+
+            .u-pt-48 {
+              padding-top: calc(var(--baseMargin) * 6);
+            }
+
+            .u-pr-0 {
+              padding-right: 0;
+            }
+
+            .u-pr-8 {
+              padding-right: var(--baseMargin);
+            }
+
+            .u-pr-16 {
+              padding-right: calc(var(--baseMargin) * 2);
+            }
+
+            .u-pr-24 {
+              padding-right: calc(var(--baseMargin) * 3);
+            }
+
+            .u-pr-32 {
+              padding-right: calc(var(--baseMargin) * 4);
+            }
+
+            .u-pr-40 {
+              padding-right: calc(var(--baseMargin) * 5);
+            }
+
+            .u-pr-48 {
+              padding-right: calc(var(--baseMargin) * 6);
+            }
+
+            .u-pb-0 {
+              padding-bottom: 0;
+            }
+
+            .u-pb-8 {
+              padding-bottom: var(--baseMargin);
+            }
+
+            .u-pb-16 {
+              padding-bottom: calc(var(--baseMargin) * 2);
+            }
+
+            .u-pb-24 {
+              padding-bottom: calc(var(--baseMargin) * 3);
+            }
+
+            .u-pb-32 {
+              padding-bottom: calc(var(--baseMargin) * 4);
+            }
+
+            .u-pb-40 {
+              padding-bottom: calc(var(--baseMargin) * 5);
+            }
+
+            .u-pb-48 {
+              padding-bottom: calc(var(--baseMargin) * 6);
+            }
+
+            .u-pl-0 {
+              padding-left: 0;
+            }
+
+            .u-pl-8 {
+              padding-left: var(--baseMargin);
+            }
+
+            .u-pl-16 {
+              padding-left: calc(var(--baseMargin) * 2);
+            }
+
+            .u-pl-24 {
+              padding-left: calc(var(--baseMargin) * 3);
+            }
+
+            .u-pl-32 {
+              padding-left: calc(var(--baseMargin) * 4);
+            }
+
+            .u-pl-40 {
+              padding-left: calc(var(--baseMargin) * 5);
+            }
+
+            .u-pl-48 {
+              padding-left: calc(var(--baseMargin) * 6);
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>position</h3>
+          <pre class="brush: css;">
+            .u-pos-a {
+              position: absolute !important;
+            }
+
+            .u-pos-r {
+              position: relative !important;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>text-align</h3>
+          <pre class="brush: css;">
+            .u-ta-l {
+              text-align: left !important;
+            }
+
+            .u-ta-c {
+              text-align: center !important;
+            }
+
+            .u-ta-r {
+              text-align: right !important;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>text-decoration</h3>
+          <pre class="brush: css;">
+            .u-fw-n {
+              font-weight: normal !important;
+            }
+
+            .u-fw-b {
+              font-weight: bold !important;
+            }
+
+            .u-td-u {
+              text-decoration: underline !important;
+            }
+
+            .u-td-none {
+              text-decoration: none !important;
+            }
+
+            .u-td-lh {
+              text-decoration: line-through !important;
+              opacity: .6;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>text-truncate</h3>
+          <pre class="brush: css;">
+            .u-tt {
+              display: block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>vertical-align</h3>
+          <pre class="brush: css;">
+            .u-va-t {
+              vertical-align: top !important;
+            }
+
+            .u-va-m {
+              vertical-align: middle !important;
+            }
+
+            .u-va-b {
+              vertical-align: bottom !important;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>white-space</h3>
+          <pre class="brush: css;">
+            .u-ws-pre {
+              white-space: pre;
+            }
+          </pre>
+        </div>
+
+        <div class="u-mb-32">
+          <h3>width</h3>
+          <pre class="brush: css;">
+          .u-w-auto {
+            width: auto!important;
+          }
+
+          .u-w-full {
+            width: 100% !important;
+          }
+
+          .u-w-half {
+            width: 45% !important;
+            margin: 0 2%;
+          }
+          </pre>
+        </div>
+
+      </div>
     </div>
-  </div>
-
-  <div class="c-container">
-    <h1>Grid</h1>
-    <div class="c-grid c-grid--gutters">
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--1of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
+    <div class="c-grid__col c-grid__col--3of12">
+      <div class="c-container">
+        <ul class="c-menu">
+          <li class="c-menu__item"><a href="#">Heading</a></li>
+          <li class="c-menu__item"><a href="#">Paragraph</a></li>
+          <li class="c-menu__item"><a href="#">Address</a></li>
+          <li class="c-menu__item"><a href="#">List</a></li>
+          <li class="c-menu__item"><a href="#">dl, dt, dd</a></li>
+          <li class="c-menu__item"><a href="#">Alert</a></li>
+          <li class="c-menu__item"><a href="#">Bar</a></li>
+          <li class="c-menu__item"><a href="#">Button</a></li>
+          <li class="c-menu__item"><a href="#">Card</a></li>
+          <li class="c-menu__item"><a href="#">Clamp</a></li>
+          <li class="c-menu__item"><a href="#">Hero</a></li>
+          <li class="c-menu__item"><a href="#">Label</a></li>
+          <li class="c-menu__item"><a href="#">Media</a></li>
+          <li class="c-menu__item"><a href="#">Menu</a></li>
+          <li class="c-menu__item"><a href="#">Nav</a></li>
+          <li class="c-menu__item"><a href="#">Form</a></li>
+          <li class="c-menu__item"><a href="#">Grid</a></li>
+          <li class="c-menu__item"><a href="#">Table</a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="c-grid c-grid--gutters">
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-    </div>
-
-    <div class="c-grid c-grid--gutters">
-      <div class="c-grid__col c-grid__col--3of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--3of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--3of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--3of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-    </div>
-
-    <div class="c-grid c-grid--gutters">
-      <div class="c-grid__col c-grid__col--4of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--4of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--4of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-    </div>
-
-    <div class="c-grid c-grid--gutters">
-      <div class="c-grid__col c-grid__col--5of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--5of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--2of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-    </div>
-
-    <div class="c-grid c-grid--gutters">
-      <div class="c-grid__col c-grid__col--6of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-      <div class="c-grid__col c-grid__col--6of12">
-        <div style="background: #ccc; padding: 10px;">Col</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="c-container">
-    <h1>Table</h1>
-
-    <h2>Basic</h2>
-    <table class="c-table c-table--basic u-mb-32">
-      <tr>
-        <th>title</th>
-        <td>description</td>
-      </tr>
-      <tr>
-        <th>title</th>
-        <td>description</td>
-      </tr>
-      <tr>
-        <th>title</th>
-        <td>description</td>
-      </tr>
-      <tr>
-        <th>title</th>
-        <td>description</td>
-      </tr>
-    </table>
-
-    <h2>Separate</h2>
-    <table class="c-table c-table--separate u-mb-32">
-      <thead>
-        <tr>
-          <th>Title1</th>
-          <th>Title2</th>
-          <th>Title3</th>
-          <th>Title4</th>
-          <th>Title5</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td data-label="Title1">description1</td>
-          <td data-label="Title2">description2</td>
-          <td data-label="Title3">description3</td>
-          <td data-label="Title4">description4</td>
-          <td data-label="Title5">description5</td>
-        </tr>
-        <tr>
-          <td data-label="Title1">description1</td>
-          <td data-label="Title2">description2</td>
-          <td data-label="Title3">description3</td>
-          <td data-label="Title4">description4</td>
-          <td data-label="Title5">description5</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Overflow</h2>
-    <table class="c-table c-table--overflow u-mb-32">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Color</th>
-          <th>Price</th>
-          <th>Area</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Apple</td>
-          <td>Red</td>
-          <td>200</td>
-          <td>Aomori</td>
-        </tr>
-        <tr>
-          <td>Orange</td>
-          <td>Orange</td>
-          <td>350</td>
-          <td>Ehime</td>
-        </tr>
-        <tr>
-          <td>Grape</td>
-          <td>Purple</td>
-          <td>400</td>
-          <td>Yamanasi</td>
-        </tr>
-        <tr>
-          <td>Melon</td>
-          <td>Yellow green</td>
-          <td>800</td>
-          <td>hokkaido</td>
-        </tr>
-      </tbody>
-    </table>
-
   </div>
 </div>
 
