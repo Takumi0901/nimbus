@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/app.min.css">
   <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
   <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js" type="text/javascript"></script>
@@ -25,16 +26,16 @@
 
 </head>
 <body>
-<div class="c-bar c-bar--shadow-bottom c-bar--fixed-top">
+<div class="c-bar c-bar--medium c-bar--shadow-bottom c-bar--fixed-top">
   <div class="c-bar__inner">
-    <h1><img src="./assets/image/logo.png" alt="" width="200"></h1>
+    <h1><img src="./assets/image/logo.png" alt="" width="140"></h1>
   </div>
 </div>
-<div class="c-hero c-hero--image c-hero--pt-large" style="background-image: url('./assets/image/hero.jpg');">
-  <div class="c-hero__inner">
-    <h2 class="c-text--white">Hero Title</h2>
-    <p class="u-mb-0">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+<div class="c-hero c-hero--image c-hero--mt-middle" style="background-image: url('./assets/image/hero.jpg');">
+  <div class="c-hero__inner u-ta-c">
+    <h2><img src="./assets/image/logo-white.png" alt="" width="300"></h2>
+    <p class="u-fz-18 u-mb-0">
+      A modern responsive front-end framework based on Post CSS
     </p>
   </div>
 </div>
@@ -42,7 +43,7 @@
 <div class="l-wrapper">
   <div class="c-grid c-grid--gutters c-grid--query">
     <div class="c-grid__col c-grid__col--9of12">
-      <div class="c-container">
+      <div id="heading" class="c-container">
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -60,7 +61,7 @@
         </pre>
       </div>
 
-      <div class="c-container">
+      <div id="paragraph" class="c-container">
         <h1>Paragraph</h1>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
 
@@ -70,7 +71,7 @@
 
       </div>
 
-      <div class="c-container">
+      <div id="address" class="c-container">
         <h1>Address</h1>
         <address>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</address>
 
@@ -79,7 +80,7 @@
         </pre>
       </div>
 
-      <div class="c-container">
+      <div id="list" class="c-container">
         <h1>List</h1>
         <ul>
           <li>List</li>
@@ -106,7 +107,7 @@
         </pre>
       </div>
 
-      <div class="c-container">
+      <div id="dl" class="c-container">
         <h1>dl, dt, dd</h1>
         <dl>
           <dt>Title</dt>
@@ -135,7 +136,7 @@
         </pre>
       </div>
 
-      <div class="c-container">
+      <div id="anchor" class="c-container">
         <h1>Anchor</h1>
         <p><a href="#">Anchor</a></p>
 
@@ -144,7 +145,7 @@
         </pre>
       </div>
 
-      <div class="c-container">
+      <div id="alert" class="c-container">
         <h1>Alert</h1>
         <div class="c-alert">
           <span class="c-alert__strong">Sed ut perspiciatis</span> unde omnis iste natus error sit voluptatem
@@ -158,7 +159,7 @@
 
       </div>
 
-      <div class="c-container">
+      <div id="bar" class="c-container">
         <h1>Bar</h1>
         <div class="c-bar c-bar--shadow-bottom">
           <div class="c-bar__inner">Bar</div>
@@ -204,7 +205,7 @@
         </table>
       </div>
 
-      <div class="c-container">
+      <div id="button" class="c-container">
         <h1>Button</h1>
         <div class="u-mb-32">
           <p>
@@ -266,7 +267,7 @@
         </div>
       </div>
 
-      <div class="c-container">
+      <div id="card" class="c-container">
         <h1>Card</h1>
         <div class="c-card">
           <div class="c-card__header">
@@ -304,7 +305,7 @@
       </div>
 
 
-      <div class="c-container">
+      <div id="clamp" class="c-container">
         <h1>Clamp</h1>
         <p class="c-clamp c-clamp--size-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
 
@@ -326,7 +327,7 @@
         </table>
       </div>
 
-      <div class="c-container">
+      <div id="hero" class="c-container">
         <h1>Hero</h1>
         <div class="c-hero c-hero--basic c-hero--anim">
           <div class="c-hero__inner">
@@ -378,15 +379,15 @@
           <tr>
             <th>Other</th>
             <td>
-              <span>c-hero--pt-large</span><br/>
-              <span>c-hero--pt-middle</span><br/>
-              <span>c-hero--pt-small</span>
+              <span>c-hero--mt-large</span><br/>
+              <span>c-hero--mt-middle</span><br/>
+              <span>c-hero--mt-small</span>
             </td>
           </tr>
         </table>
       </div>
 
-      <div class="c-container">
+      <div id="label" class="c-container">
         <h1>Label</h1>
         <span class="c-label">Default</span>
         <span class="c-label c-label--primary">Primary</span>
@@ -403,7 +404,7 @@
         </pre>
       </div>
 
-      <div class="c-container">
+      <div id="media" class="c-container">
         <h1>Media</h1>
         <div class="c-media">
           <div class="c-media__content">
@@ -431,7 +432,7 @@
 
       </div>
 
-      <div class="c-container">
+      <div id="menu" class="c-container">
         <h1>Menu</h1>
         <ul class="c-menu">
           <li class="c-menu__item"><a href="#" class="is-active">Menu 1</a></li>
@@ -460,7 +461,7 @@
         </table>
       </div>
 
-      <div class="c-container">
+      <div id="nav" class="c-container">
         <h1>Nav</h1>
         <div class="u-mb-32">
           <div class="c-bar c-bar--shadow-bottom">
@@ -563,7 +564,7 @@
         </table>
       </div>
 
-      <div class="c-container">
+      <div id="form" class="c-container">
         <h1>Form</h1>
         <div class="c-form">
           <div class="u-mb-32">
@@ -724,7 +725,7 @@
         </div>
       </div>
 
-      <div class="c-container">
+      <div id="grid" class="c-container">
         <h1>Grid</h1>
         <div class="c-grid c-grid--gutters">
           <div class="c-grid__col c-grid__col--1of12">
@@ -978,7 +979,7 @@
         </table>
       </div>
 
-      <div class="c-container">
+      <div id="table" class="c-container">
         <h1>Table</h1>
 
         <div class="u-mb-32">
@@ -1165,7 +1166,7 @@
         </div>
       </div>
 
-      <div class="c-container">
+      <div id="utility" class="c-container">
         <h1>Utility</h1>
         <div class="u-mb-32">
           <h3>border</h3>
@@ -1684,29 +1685,49 @@
     <div class="c-grid__col c-grid__col--3of12">
       <div class="c-container">
         <ul class="c-menu">
-          <li class="c-menu__item"><a href="#">Heading</a></li>
-          <li class="c-menu__item"><a href="#">Paragraph</a></li>
-          <li class="c-menu__item"><a href="#">Address</a></li>
-          <li class="c-menu__item"><a href="#">List</a></li>
-          <li class="c-menu__item"><a href="#">dl, dt, dd</a></li>
-          <li class="c-menu__item"><a href="#">Alert</a></li>
-          <li class="c-menu__item"><a href="#">Bar</a></li>
-          <li class="c-menu__item"><a href="#">Button</a></li>
-          <li class="c-menu__item"><a href="#">Card</a></li>
-          <li class="c-menu__item"><a href="#">Clamp</a></li>
-          <li class="c-menu__item"><a href="#">Hero</a></li>
-          <li class="c-menu__item"><a href="#">Label</a></li>
-          <li class="c-menu__item"><a href="#">Media</a></li>
-          <li class="c-menu__item"><a href="#">Menu</a></li>
-          <li class="c-menu__item"><a href="#">Nav</a></li>
-          <li class="c-menu__item"><a href="#">Form</a></li>
-          <li class="c-menu__item"><a href="#">Grid</a></li>
-          <li class="c-menu__item"><a href="#">Table</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#heading">Heading</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#paragraph">Paragraph</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#address">Address</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#list">List</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#dl">dl, dt, dd</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#alert">Alert</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#bar">Bar</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#button">Button</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#card">Card</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#clamp">Clamp</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#hero">Hero</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#label">Label</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#media">Media</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#menu">Menu</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#nav">Nav</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#form">Form</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#grid">Grid</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#table">Table</a></li>
+          <li class="c-menu__item"><a class="js-page-link" href="#utility">Utility</a></li>
         </ul>
       </div>
     </div>
   </div>
+
+  <div class="l-footer">
+    <p>© 2015 - 2017 イチマルニデザイン</p>
+  </div>
+
 </div>
+
+<script>
+  $(function(){
+    // #で始まるアンカーをクリックした場合に処理
+    $('.js-page-link').click(function() {
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - 64;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -2,6 +2,10 @@
   margin: 0 0 calc(var(--baseMargin) * 4);
   position: relative;
   color: var(--colorWhite);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 
   &--basic {
     background: linear-gradient(270deg, var(--colorPrimary), var(--colorSecondary));
@@ -19,23 +23,23 @@
     background-position: 0 bottom;
   }
 
-  &--pt-large {
-    padding-top: var(--largeHeight);
+  &--mt-large {
+    margin-top: var(--largeHeight);
   }
 
-  &--pt-middle {
-    padding-top: var(--middleHeight);
+  &--mt-middle {
+    margin-top: var(--middleHeight);
   }
 
-  &--pt-small {
-    padding-top: var(--smallHeight);
+  &--mt-small {
+    margin-top: var(--smallHeight);
   }
 }
 
 .c-hero__inner {
-  width: auto;
   padding: calc(var(--baseMargin) * 4) calc(var(--baseMargin) * 2);
   min-height: 200px;
+  width: 100%;
 }
 
 @media (--viewportPc) {
