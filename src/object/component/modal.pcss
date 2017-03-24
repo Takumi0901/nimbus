@@ -1,0 +1,85 @@
+.c-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  overflow-y: scroll;
+  opacity: 0;
+  display: none;
+  animation-duration: 0.5s;
+  animation-name: fade-out-100;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-out-100;
+}
+
+.c-modal__panel {
+  position: relative;
+  width: 94%;
+  margin: calc(var(--baseMargin) * 10) auto 0;
+  background: var(--colorWhite);
+  box-shadow: 0 0 8px var(--colorDefaultAlpha1);
+  border-radius: 8px;
+}
+
+.c-modal.is-fadein {
+  display: block;
+  opacity: 1;
+  animation-duration: 0.5s;
+  animation-name: fade-in-100;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-in-100;
+}
+
+.c-modal.is-fadeout {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: fade-out-100;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-out-100;
+}
+.c-modal__overlay {
+  display: block;
+  z-index: -1;
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c-modal__header {
+  border-bottom: 1px solid var(--colorDefaultLigten2);
+  padding: calc(var(--baseMargin) * 2);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.c-modal__content {
+  position: relative;
+  padding: calc(var(--baseMargin) * 2);
+  min-height: 160px;
+  max-height: 300px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-modal__bottom {
+  border-top: 1px solid var(--colorDefaultLigten2);
+  padding: calc(var(--baseMargin) * 2);
+  text-align: right;
+}
+
+.c-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 20px;
+
+  &--circle {
+    top: -38px;
+    font-size: 16px;
+  }
+}
