@@ -1,0 +1,36 @@
+.c-avatar {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.c-avatar--small {
+  width: var(--avatarSmall);
+  height: var(--avatarSmall);
+
+  img {
+    margin: calc(var(--avatarSmall) / -2) 0 0 calc(var(--avatarSmall) / -2);
+    width:  calc(var(--avatarSmall) * 2);
+  }
+}
+
+.c-avatar--medium {
+  width: var(--avatarMedium);
+  height: var(--avatarMedium);
+
+  img {
+    margin: calc(var(--avatarMedium) / -2) 0 0 calc(var(--avatarMedium) / -2);
+    width:  calc(var(--avatarMedium) * 2);
+  }
+}
+
+.c-avatar--large {
+  width: var(--avatarLarge);
+  height: var(--avatarLarge);
+
+  img {
+    margin: calc(var(--avatarLarge) / -2) 0 0 calc(var(--avatarLarge) / -2);
+    width:  calc(var(--avatarLarge) * 2);
+  }
+}

@@ -1,0 +1,59 @@
+.c-tab {
+  display: block;
+
+  &__menu {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0 0 calc(var(--baseMargin) * 3) 0;
+    padding: 0;
+    border-bottom: solid 1px var(--colorDefaultLigten2);
+  }
+
+  &__btn {
+    display: block;
+    padding: calc(var(--baseMargin) * 1) calc(var(--baseMargin) * 2);
+    text-decoration: none;
+    background-color: var(--colorWhite);
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    color: var(--baseColorText);
+    text-decoration: none;
+    margin-bottom: -2px;
+
+    &:link,
+    &:visited {
+      color: var(--baseColorText);
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: var(--colorPrimary);
+      text-decoration: none;
+    }
+  }
+
+  &__body {
+    display: none;
+    width: 100%;
+    margin-bottom: calc(var(--baseMargin) * 3);
+  }
+}
+
+.c-tab__menu__item.is-active .c-tab__btn {
+  border: solid 1px var(--colorDefaultLigten2);
+  border-bottom: solid 1px var(--colorWhite);
+  color: var(--colorPrimary);
+  position: relative;
+}
+
+.c-tab__body.is-show {
+  display: block;
+}
+
+@media (--viewportPc) {
+  .c-tab__btn {
+    padding: calc(var(--baseMargin) * 2) calc(var(--baseMargin) * 4);
+  }
+}
