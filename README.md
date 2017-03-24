@@ -1,86 +1,38 @@
-## PostCSSとは
+## The feature of Nimbus
+### PostCSS
 
->PostCSSとは、JavaScriptで書かれた次世代CSSを変換するためのツールです。
- PostCSSは、ES2015を現行のJavaScriptにトランスポートする「Babel」と同じで、未来のcssを現行のcssに翻訳してくれます。
- PostCSS自体は、はあくまで変換するツールで、必要な機能をプラグインとして自分で取捨選択し、機能拡張していきます。
- 
- [未来を先取るPostCSS | CodeCode](http://codecodeweb.com/blog/199)
+CSS is being changed using PostCSS in Nimbus.CSS holds a used plug-in at a minimum to avoid the one of being too to will be in the original specification.
 
-## IntelliJのError問題
+#### Plugin
 
-拡張子を.pcssにすると解決
+- postcss-cssnext
+- postcss-import
+- postcss-nested
+- cssnano
 
-## postcss-simple-varsのError問題
+### Responsive & Mobile first
 
-## 使ったプラグイン
+The grid system is flexbox based. So it's simple and excellent than the float layout! Same height box, Reverse grid, Equal spacing layout and more.
 
-### autoprefixer
+### Component which is often used was collected.
 
-説明不要
+component which is often used by a corporate site was collected. It's possible to button up the favorite color and size by changing the color and the size which become a basis.
 
-### postcss-calc
+## Architecture
 
-calc関数
+The architecture of CSS in Nimbus is based on FLOCSS. There is variables.css which manages a variable of CSS by a core directory. It's made compilation now using Gulp.
 
-### postcss-nested
+```
+├ core/
+├ foundation/
+├ layout/
+└ object/
+  ├ component/
+  ├ project/
+  └ utility/
+```
 
-ネスト
+## License
 
-### postcss-import
+Nimbus licensed under MIT. Nimbus is absolutely free for personal or commercial use.
 
-インポートできるようにする
-
-### postcss-custom-media
-
-メディアクエリの定義を変数化
-
-### postcss-custom-properties
-
-変数
-
-### postcss-color-function
-
-プラグインは新しいcolor()関数
-
-### cssnano
-
-CSSの最適化
-
-### postcss-simple-vars
-
-$の変数，mixin専用にしておいた
-
-### postcss-mixins
-
-mixinができる
-
-
-
-
-
-## 参考
-
-[PostCSSとcssnextで最新CSS仕様を先取り！ | HTML5Experts.jp](https://html5experts.jp/t32k/17235/)
-
-[そうならないようにPostCSSで使う プリプロセッサ系のプラグイン は「cssnextに記載されたプラグインだけ使う」などのルールを決めたほうが良いでしょう。](http://qiita.com/howdy39/items/1029e3df24ac42c7bd49)
-
-[:root {   --myColor: red; }  div {   background-color: var(--myColor) }](http://qiita.com/howdy39/items/92a7de771bbea99dbc7c)
-
-[cssnext](https://blog.kazu69.net/2015/06/15/develop-latest-css-syntax-using-cssnext/)
-
-[初心者歓迎！ 話題のPostCSSの導入方法からおすすめプラグインまで - WPJ](https://www.webprofessional.jp/7-postcss-plugins-to-ease-you-into-postcss/)
-
-
-[PostCSS とは何か \- SSSSLIDE](http://sssslide.com/speakerdeck.com/jmblog/postcss-tohahe-ka)
-
-[postcss-cssnext features](http://cssnext.io/features/)
-
-
-
-## stylelint
-
-[SCSSもだいたい使える](http://qiita.com/inuscript/items/ff4f6972c988afbec3a8)
-
-[CSSのLintをstylelintにする \- Qiita](http://qiita.com/makotot/items/c266ed11ada1423cb96e)
-
-[ここがすごいぞ！ stylelint！ \- Qiita](http://qiita.com/inuscript/items/ff4f6972c988afbec3a8)
