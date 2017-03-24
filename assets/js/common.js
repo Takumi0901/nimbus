@@ -36,11 +36,19 @@ jQuery(document).ready(function($){
    * modal
    */
   $('.js-modal-btn').each(function(){
-    new Modal(this);
+    var modal = new Modal(this);
+    modal;
   });
+
+
+  /**
+   * fixedContent
+   */
+  var fixedContent = new FixedContent();
+  fixedContent;
 });
 
-//　モーダル
+// Modal
 ////////////////////////////////////////////////////////////
 function Modal(el){
   this.initialize(el);
@@ -99,35 +107,38 @@ Modal.prototype.modalFadeReset = function(){
   this.$modal.removeClass('is-fadeout');
 }
 
+
+// FixedContent
+////////////////////////////////////////////////////////////
 function FixedContent(){
   this.initialize();
   this.handleScrollEvents();
 }
 
 FixedContent.prototype.initialize = function(){
-  this.$sideH = $('.js-fixed-menu').innerHeight();
-  this.$mainH = $('.main_content').innerHeight();
-  this.$sideOffsetTop = $('.js-fixed-menu').offset().top
-  this.$bottomContentH = $('.side_bottom').innerHeight();
-
+  this.$sideH = $('.js-fixed-content').innerHeight();
+  this.$mainH = $('.js-wrapper').innerHeight();
+  this.$headerH = $('.js-header').innerHeight();
+  this.$sideOffsetTop = $('.js-fixed-content').offset().top
+  this.$bottomContentH = $('.js-footer').innerHeight();
 
   var self = this;
   this.sideWithOverFlowScroll();
 
-  // $(window).resize(function(){
-  //   self.sideWithOverFlowScroll();
-  // });
+  $(window).resize(function(){
+    self.sideWithOverFlowScroll();
+  });
 }
 
 FixedContent.prototype.sideWithOverFlowScroll = function(){
   this.$wH = $(window).height();
+  this.$wrapW = $('.js-fixed-content-wrap').innerWidth();
+  $('.js-fixed-content-wrap').css({'position': 'rerative'});
 
   if(this.$wH < this.$sideH){
-    $('.side_content_inner').css({'height': this.$wH});
-    $('.side_menu_wrap').css('height', this.$wH - this.$bottomContentH);
+    $('.js-fixed-content').css({'height': this.$wH - this.$bottomContentH, 'width': this.$wrapW});
   }else{
-    $('.side_content_inner').css({'height': 'auto'});
-    $('.side_menu_wrap').css('height', 'auto');
+    $('.js-fixed-content').css({'height': 'auto', 'width':  this.$wrapW});
   }
 }
 
@@ -143,27 +154,26 @@ FixedContent.prototype.handleScrollEvents = function(){
 
 FixedContent.prototype.customScroll = function(scrollValue){
   var self = this;
-  $('.js-fixed-menu').each(function(){
+
+  $('.js-fixed-content').each(function(){
     var $this = $(this);
-    var $targetEle = $('.copyright').offset().top;
+    var $targetEle = $('.js-footer').offset().top;
     var $targetPos = $targetEle - self.$wH;
 
-    if(self.$bottomContentH == null){
-      $targetPos = $targetEle - self.$wH;
-    }else{
-      $targetPos = $targetEle - self.$wH - 140;
-    }
-
     if(self.$sideOffsetTop <= scrollValue){
+
       if($targetPos < scrollValue){
         if(!$this.hasClass('is-absolute')){
           $this.addClass('is-absolute');
           $this.removeClass('is-fixed');
+          $this.css({top: 'auto', bottom: 0});
         }
       }else{
+        
         if(!$this.hasClass('is-fixed')){
           $this.addClass('is-fixed');
           $this.removeClass('is-absolute');
+          $this.css({top: self.$headerH + 24 + 'px', bottom: 'auto'});
         }
       }
     }else{

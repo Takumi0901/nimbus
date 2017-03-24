@@ -1,0 +1,33 @@
+.c-fixed {
+  position: relative;
+
+  &__content {
+    position: static;
+    width: 100%;
+
+    &.is-absolute {
+      position: static;
+    }
+
+    &.is-fixed {
+      position: static;
+    }
+  }
+}
+
+@media (--viewportPc) {
+  .c-fixed__content {
+    position: static;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+
+    &.is-absolute {
+      position: absolute;
+    }
+
+    &.is-fixed {
+      position: fixed;
+    }
+  }
+}

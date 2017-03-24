@@ -26,7 +26,7 @@
 
 </head>
 <body>
-<div class="c-bar c-bar--medium c-bar--shadow-bottom c-bar--fixed-top">
+<div class="c-bar c-bar--medium c-bar--shadow-bottom c-bar--fixed-top js-header">
   <div class="c-bar__inner">
     <h1><img src="./assets/image/logo.png" alt="" width="140"></h1>
   </div>
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="l-wrapper">
+<div class="l-wrapper js-wrapper">
   <div class="c-grid c-grid--gutters c-grid--query">
     <div class="c-grid__col c-grid__col--9of12">
       <div id="heading" class="c-container">
@@ -1325,6 +1325,40 @@
             <div class="c-modal__overlay js-modal-overlay"></div>
           </div>
         </pre>
+
+        <div class="c-container--full">
+          <h2>Fixed-Content</h2>
+          <pre class="brush: html;">
+            <!--
+            <div class="c-bar c-bar--medium c-bar--shadow-bottom c-bar--fixed-top js-header">
+              <div class="c-bar__inner">
+                <h1><img src="./assets/image/logo.png" alt="" width="140"></h1>
+              </div>
+            </div>
+
+            <div class="l-wrapper js-wrapper">
+              <div class="c-grid c-grid--gutters c-grid--query">
+                <div class="c-grid__col c-grid__col--9of12">
+                </div>
+                <div class="c-grid__col c-grid__col--3of12">
+                  <div class="c-container js-fixed-content-wrap">
+                    <div class="c-fixed-content js-fixed-content">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            -->
+          </pre>
+        </div>
+
+        <div class="c-container--full">
+          <h2>Page-Link</h2>
+          <pre class="brush: html;">
+            <a class="js-page-link" href="#heading">Heading</a>
+          </pre>
+        </div>
+
       </div>
 
       <div id="utility" class="c-container">
@@ -1843,38 +1877,40 @@
 
       </div>
     </div>
-    <div class="c-grid__col c-grid__col--3of12">
-      <div class="c-container">
-        <ul class="c-menu">
-          <li class="c-menu__item"><a class="js-page-link" href="#heading">Heading</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#paragraph">Paragraph</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#address">Address</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#list">List</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#dl">dl, dt, dd</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#alert">Alert</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#avatar">Avatar</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#bar">Bar</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#button">Button</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#card">Card</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#clamp">Clamp</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#container">Container</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#form">Form</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#grid">Grid</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#hero">Hero</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#label">Label</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#media">Media</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#menu">Menu</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#nav">Nav</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#table">Table</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#text">Text</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#js">JavaScript</a></li>
-          <li class="c-menu__item"><a class="js-page-link" href="#utility">Utility</a></li>
-        </ul>
+    <div class="c-grid__col c-grid__col--3of12 c-fixed">
+      <div class="c-container js-fixed-content-wrap">
+        <div class="c-fixed__content js-fixed-content">
+          <ul class="c-menu">
+            <li class="c-menu__item"><a class="js-page-link" href="#heading">Heading</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#paragraph">Paragraph</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#address">Address</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#list">List</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#dl">dl, dt, dd</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#alert">Alert</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#avatar">Avatar</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#bar">Bar</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#button">Button</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#card">Card</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#clamp">Clamp</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#container">Container</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#form">Form</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#grid">Grid</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#hero">Hero</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#label">Label</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#media">Media</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#menu">Menu</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#nav">Nav</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#table">Table</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#text">Text</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#js">JavaScript</a></li>
+            <li class="c-menu__item"><a class="js-page-link" href="#utility">Utility</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="l-footer">
+  <div class="l-footer js-footer">
     <p>© 2015 - 2017 イチマルニデザイン</p>
   </div>
 
