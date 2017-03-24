@@ -1,9 +1,9 @@
 {
-  "name": "nimbus",
-  "version": "1.0.0",
+  "name": "nimbus-jquery",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "gulp css"
   },
   "author": "Takumi0901 <juventus0901@gmail.com> (https://github.com/keitarou)",
   "license": "MIT",
