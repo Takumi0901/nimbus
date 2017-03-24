@@ -6,10 +6,19 @@
   margin: 0 auto;
   padding: 0 0 calc(var(--baseMargin) * 6);
   display: block;
-}
 
-.l-wrapper--pt96 {
-  padding-top: 96px;
+  &--mt-large {
+    margin-top: var(--largeHeight) !important;
+  }
+
+  &--mt-middle {
+    margin-top: var(--middleHeight) !important;
+  }
+
+  &--mt-small {
+    margin-top: var(--smallHeight) !important;
+  }
+  
 }
 
 @media (--viewportPc) {

@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="../assets/css/app.min.css">
   <link href="http://alexgorbatchev.com/pub/sh/current/styles/shCore.css" rel="stylesheet" type="text/css" />
   <link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js" type="text/javascript"></script>
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js" type="text/javascript"></script>
@@ -28,114 +27,37 @@
 <body>
 <div class="c-bar c-bar--medium c-bar--shadow-bottom c-bar--fixed-top js-header">
   <div class="c-bar__inner">
-    <h1><img src="./assets/image/logo.png" alt="" width="140"></h1>
-  </div>
-</div>
-<div class="c-hero c-hero--image c-hero--mt-middle" style="background-image: url('./assets/image/hero.jpg');">
-  <div class="c-hero__inner u-ta-c">
-    <h2><img src="./assets/image/logo-white.png" alt="" width="300"></h2>
-    <p class="u-fz-18 u-mb-0">
-      A modern responsive front-end framework based on Post CSS
-    </p>
+    <div class="c-grid c-grid--gutters c-grid--between">
+      <div class="c-grid__col">
+        <h1><img src="../assets/image/logo.png" alt="" width="140"></h1>
+      </div>
+      <div class="c-grid__col u-d-pc">
+        <ul class="c-nav c-nav--medium">
+          <li class="c-nav__item"><a href="index.html">Home</a></li>
+          <li class="c-nav__item"><a href="start.html">Getting started</a></li>
+          <li class="c-nav__item"><a href="base.html">Base</a></li>
+          <li class="c-nav__item"><a href="component.html">Component</a></li>
+          <li class="c-nav__item"><a href="javascript.html">JavaScript</a></li>
+          <li class="c-nav__item"><a href="utility.html">Utility</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="l-wrapper js-wrapper">
+<div class="l-wrapper l-wrapper--mt-large js-wrapper">
+  <div class="c-container u-d-sp">
+    <ul class="c-menu c-menu--border">
+      <li class="c-menu__item"><a href="index.html">Home</a></li>
+      <li class="c-menu__item"><a href="start.html">Getting started</a></li>
+      <li class="c-menu__item"><a href="base.html">Base</a></li>
+      <li class="c-menu__item"><a href="component.html">Component</a></li>
+      <li class="c-menu__item"><a href="javascript.html">JavaScript</a></li>
+      <li class="c-menu__item"><a href="utility.html">Utility</a></li>
+    </ul>
+  </div>
   <div class="c-grid c-grid--gutters c-grid--query">
     <div class="c-grid__col c-grid__col--9of12">
-      <div id="heading" class="c-container">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-
-        <pre class="brush: html;">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        </pre>
-      </div>
-
-      <div id="paragraph" class="c-container">
-        <h1>Paragraph</h1>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
-
-        <pre class="brush: html;">
-        <p>Paragraph</p>
-        </pre>
-
-      </div>
-
-      <div id="address" class="c-container">
-        <h1>Address</h1>
-        <address>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</address>
-
-        <pre class="brush: html;">
-        <address>Address</address>
-        </pre>
-      </div>
-
-      <div id="list" class="c-container">
-        <h1>List</h1>
-        <ul>
-          <li>List</li>
-          <li>List</li>
-          <li>List</li>
-        </ul>
-        <ol>
-          <li>List</li>
-          <li>List</li>
-          <li>List</li>
-        </ol>
-
-        <pre class="brush: html;">
-        <ul>
-          <li>List</li>
-          <li>List</li>
-          <li>List</li>
-        </ul>
-        <ol>
-          <li>List</li>
-          <li>List</li>
-          <li>List</li>
-        </ol>
-        </pre>
-      </div>
-
-      <div id="dl" class="c-container">
-        <h1>dl, dt, dd</h1>
-        <dl>
-          <dt>Title</dt>
-          <dd>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          </dd>
-        </dl>
-
-        <dl>
-          <dt>Title</dt>
-          <dd>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          </dd>
-          <dd>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          </dd>
-        </dl>
-
-        <pre class="brush: html;">
-        <dl>
-          <dt>Title</dt>
-          <dd>
-            Description
-          </dd>
-        </dl>
-        </pre>
-      </div>
-
       <div id="anchor" class="c-container">
         <h1>Anchor</h1>
         <p><a href="#">Anchor</a></p>
@@ -161,7 +83,7 @@
 
       <div id="avatar" class="c-container">
         <h1>Avatar</h1>
-        <div class="c-avatar c-avatar--small u-mb-32"><img src="./assets/image/thumb.jpg" alt=""></div>
+        <div class="c-avatar c-avatar--small u-mb-32"><img src="../assets/image/thumb.jpg" alt=""></div>
 
         <h3>Modifier</h3>
         <table class="c-table">
@@ -807,7 +729,7 @@
 
         <h3>Image</h3>
         <pre class="brush: html;">
-          <div class="c-hero c-hero--image" style="background-image: url('./assets/image/hero.jpg');">
+          <div class="c-hero c-hero--image" style="background-image: url('../assets/image/hero.jpg');">
             <div class="c-hero__inner">
               <h2 class="c-text--white">Hero Title</h2>
               <p class="u-mb-0">
@@ -864,7 +786,7 @@
         <h1>Media</h1>
         <div class="c-media">
           <div class="c-media__content">
-            <img src="./assets/image/thumb.jpg" alt="" width="150" height="150">
+            <img src="../assets/image/thumb.jpg" alt="" width="150" height="150">
           </div>
           <div class="c-media__content">
             <p class="u-mb-0">
@@ -876,7 +798,7 @@
         <pre class="brush: html;">
           <div class="c-media">
             <div class="c-media__content">
-              <img src="./assets/image/thumb.jpg" alt="" width="150" height="150">
+              <img src="../assets/image/thumb.jpg" alt="" width="150" height="150">
             </div>
             <div class="c-media__content">
               <p class="u-mb-0">
@@ -1070,29 +992,29 @@
         <div class="u-mb-32">
           <table class="c-table c-table--separate">
             <thead>
-              <tr>
-                <th>Title1</th>
-                <th>Title2</th>
-                <th>Title3</th>
-                <th>Title4</th>
-                <th>Title5</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td data-label="Title1">description1</td>
-                <td data-label="Title2">description2</td>
-                <td data-label="Title3">description3</td>
-                <td data-label="Title4">description4</td>
-                <td data-label="Title5">description5</td>
-              </tr>
-              <tr>
-                <td data-label="Title1">description1</td>
-                <td data-label="Title2">description2</td>
-                <td data-label="Title3">description3</td>
-                <td data-label="Title4">description4</td>
-                <td data-label="Title5">description5</td>
-              </tr>
+            <tr>
+              <th>Title1</th>
+              <th>Title2</th>
+              <th>Title3</th>
+              <th>Title4</th>
+              <th>Title5</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td data-label="Title1">description1</td>
+              <td data-label="Title2">description2</td>
+              <td data-label="Title3">description3</td>
+              <td data-label="Title4">description4</td>
+              <td data-label="Title5">description5</td>
+            </tr>
+            <tr>
+              <td data-label="Title1">description1</td>
+              <td data-label="Title2">description2</td>
+              <td data-label="Title3">description3</td>
+              <td data-label="Title4">description4</td>
+              <td data-label="Title5">description5</td>
+            </tr>
             </tbody>
           </table>
 
@@ -1132,38 +1054,38 @@
           <h2>Overflow</h2>
           <table class="c-table c-table--overflow">
             <thead>
-              <tr>
-                <th>Type</th>
-                <th>Color</th>
-                <th>Price</th>
-                <th>Area</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>Apple</td>
-                <td>Red</td>
-                <td>200</td>
-                <td>Aomori</td>
-              </tr>
-              <tr>
-                <td>Orange</td>
-                <td>Orange</td>
-                <td>350</td>
-                <td>Ehime</td>
-              </tr>
-              <tr>
-                <td>Grape</td>
-                <td>Purple</td>
-                <td>400</td>
-                <td>Yamanasi</td>
-              </tr>
-              <tr>
-                <td>Melon</td>
-                <td>Yellow green</td>
-                <td>800</td>
-                <td>hokkaido</td>
-              </tr>
+            <tr>
+              <th>Type</th>
+              <th>Color</th>
+              <th>Price</th>
+              <th>Area</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Apple</td>
+              <td>Red</td>
+              <td>200</td>
+              <td>Aomori</td>
+            </tr>
+            <tr>
+              <td>Orange</td>
+              <td>Orange</td>
+              <td>350</td>
+              <td>Ehime</td>
+            </tr>
+            <tr>
+              <td>Grape</td>
+              <td>Purple</td>
+              <td>400</td>
+              <td>Yamanasi</td>
+            </tr>
+            <tr>
+              <td>Melon</td>
+              <td>Yellow green</td>
+              <td>800</td>
+              <td>hokkaido</td>
+            </tr>
             </tbody>
           </table>
           <pre class="brush: html;">
@@ -1222,699 +1144,39 @@
           <p class="c-text--white">White</p>
         </pre>
       </div>
-
-      <div id="js" class="c-container">
-        <h1>JavaScript</h1>
-        <div class="c-container--full">
-          <h2>Tab</h2>
-          <div class="c-tab js-tab">
-            <ul class="c-tab__menu">
-              <li class="c-tab__menu__item is-active">
-                <a class="c-tab__btn js-tab-btn" href="#" data-tabid="1">tab1</a>
-              </li>
-              <li class="c-tab__menu__item">
-                <a class="c-tab__btn js-tab-btn" href="#"  data-tabid="2">tab2</a>
-              </li>
-              <li class="c-tab__menu__item">
-                <a class="c-tab__btn js-tab-btn" href="#" data-tabid="3">tab3</a>
-              </li>
-            </ul>
-            <div class="c-tab__body js-tab-body is-show" data-contentid="1">
-              content 1
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            </div>
-            <div class="c-tab__body js-tab-body" data-contentid="2">
-              content 2
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            </div>
-            <div class="c-tab__body js-tab-body" data-contentid="3">
-              content  3
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            </div>
-          </div>
-
-          <pre class="brush: html;">
-            <div class="c-tab js-tab">
-              <ul class="c-tab__menu">
-                <li class="c-tab__menu__item is-active">
-                  <a class="c-tab__btn js-tab-btn" href="#" data-tabid="1">tab1</a>
-                </li>
-                <li class="c-tab__menu__item">
-                  <a class="c-tab__btn js-tab-btn" href="#"  data-tabid="2">tab2</a>
-                </li>
-                <li class="c-tab__menu__item">
-                  <a class="c-tab__btn js-tab-btn" href="#" data-tabid="3">tab3</a>
-                </li>
-              </ul>
-              <div class="c-tab__body js-tab-body is-show" data-contentid="1">
-                content 1
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              </div>
-              <div class="c-tab__body js-tab-body" data-contentid="2">
-                content 2
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              </div>
-              <div class="c-tab__body js-tab-body" data-contentid="3">
-                content  3
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-              </div>
-            </div>
-          </pre>
-        </div>
-
-        <div class="c-container--full">
-          <h2>Modal</h2>
-          <p>
-            <a href="#groupSuccesModal" class="c-btn c-btn-primary--flat js-modal-btn">modal</a>
-          </p>
-          <div id="groupSuccesModal" class="js-modal c-modal">
-            <div class="c-modal__panel">
-              <div class="c-modal__header">
-                Modal Title
-              </div>
-              <div class="c-modal__content">
-                <div class="c-modal__content__inner">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                </div>
-              </div>
-              <div class="c-modal__bottom">
-                <button class="c-btn c-btn-default--flat js-modal-close-btn">閉じる</button>
-              </div>
-            </div>
-            <div class="c-modal__overlay js-modal-overlay"></div>
-          </div>
-        </div>
-        <pre class="brush: html;">
-          <p>
-            <a href="#groupSuccesModal" class="c-btn c-btn-primary--flat js-modal-btn">modal</a>
-          </p>
-          <div class="js-modal c-modal">
-            <div class="c-modal__panel">
-              <div class="c-modal__header">
-                Modal Title
-              </div>
-              <div class="c-modal__content">
-                <div class="c-modal__content__inner">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                </div>
-              </div>
-              <div class="c-modal__bottom">
-                <button class="c-btn c-btn-default--flat js-modal-close-btn">閉じる</button>
-              </div>
-            </div>
-            <div class="c-modal__overlay js-modal-overlay"></div>
-          </div>
-        </pre>
-
-        <div class="c-container--full">
-          <h2>Fixed-Content</h2>
-          <pre class="brush: html;">
-            <!--
-            <div class="c-bar c-bar--medium c-bar--shadow-bottom c-bar--fixed-top js-header">
-              <div class="c-bar__inner">
-                <h1><img src="./assets/image/logo.png" alt="" width="140"></h1>
-              </div>
-            </div>
-
-            <div class="l-wrapper js-wrapper">
-              <div class="c-grid c-grid--gutters c-grid--query">
-                <div class="c-grid__col c-grid__col--9of12">
-                </div>
-                <div class="c-grid__col c-grid__col--3of12">
-                  <div class="c-container js-fixed-content-wrap">
-                    <div class="c-fixed-content js-fixed-content">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-          </pre>
-        </div>
-
-        <div class="c-container--full">
-          <h2>Page-Link</h2>
-          <pre class="brush: html;">
-            <a class="js-page-link" href="#heading">Heading</a>
-          </pre>
-        </div>
-
-      </div>
-
-      <div id="utility" class="c-container">
-        <h1>Utility</h1>
-        <div class="u-mb-32">
-          <h3>border</h3>
-          <pre class="brush: css;">
-            .u-br-0 {
-              border: none !important;
-            }
-
-            .u-br-t-0 {
-              border-top: none !important;
-            }
-
-            .u-br-r-0 {
-              border-right: none !important;
-            }
-
-            .u-br-b-0 {
-              border-bottom: none !important;
-            }
-
-            .u-br-l-0 {
-              border-left: none !important;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>clearfix</h3>
-          <pre class="brush: css;">
-            .u-cf {
-              *zoom: 1;
-
-              &:after {
-                content: "";
-                display: table;
-                clear: both;
-              }
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>display</h3>
-          <pre class="brush: css;">
-            .u-d-tb {
-              display: table !important;
-            }
-
-            .u-d-tbc {
-              display: table-cell !important;
-            }
-
-            .u-d-b {
-              display: block !important;
-            }
-
-            .u-d-ib {
-              display: inline-block !important;
-            }
-
-            .u-d-n{
-              display: none !important;
-            }
-
-            .u-d-pc {
-              display: none !important;
-            }
-
-            .u-d-sp {
-              display: block !important;
-            }
-
-            @media (--viewportPc) {
-              .u-d-pc {
-                display: block !important;
-              }
-
-              .u-d-sp {
-                display: none !important;
-              }
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>font-size</h3>
-          <pre class="brush: css;">
-            .u-fz-8 {
-              font-size: 0.8rem;
-            }
-
-            .u-fz-10 {
-              font-size: 1rem;
-            }
-
-            .u-fz-12 {
-              font-size: 1.2rem;
-            }
-
-            .u-fz-14 {
-              font-size: 1.4rem;
-            }
-
-            .u-fz-16 {
-              font-size: 1.6rem;
-            }
-
-            .u-fz-18 {
-              font-size: 1.8rem;
-            }
-
-            .u-fz-20 {
-              font-size: 2rem;
-            }
-
-            .u-fz-22 {
-              font-size: 2.2rem;
-            }
-
-            .u-fz-24 {
-              font-size: 2.4rem;
-            }
-
-            .u-fz-26 {
-              font-size: 2.6rem;
-            }
-
-            .u-fz-28 {
-              font-size: 2.8rem;
-            }
-
-            .u-fz-30 {
-              font-size: 3rem;
-            }
-
-            .u-fz-32 {
-              font-size: 3.2rem;
-            }
-
-            .u-fz-34 {
-              font-size: 3.4rem;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>margin</h3>
-          <pre class="brush: css;">
-            .u-m-c {
-              margin: 0 auto;
-            }
-
-            .u-mt-0 {
-              margin-top: 0;
-            }
-
-            .u-mt-8 {
-              margin-top: var(--baseMargin);
-            }
-
-            .u-mt-16 {
-              margin-top: calc(var(--baseMargin) * 2);
-            }
-
-            .u-mt-24 {
-              margin-top: calc(var(--baseMargin) * 3);
-            }
-
-            .u-mt-32 {
-              margin-top: calc(var(--baseMargin) * 4);
-            }
-
-            .u-mt-40 {
-              margin-top: calc(var(--baseMargin) * 5);
-            }
-
-            .u-mt-48 {
-              margin-top: calc(var(--baseMargin) * 6);
-            }
-
-            .u-mr-0 {
-              margin-right: 0;
-            }
-
-            .u-mr-8 {
-              margin-right: var(--baseMargin);
-            }
-
-            .u-mr-16 {
-              margin-right: calc(var(--baseMargin) * 2);
-            }
-
-            .u-mr-24 {
-              margin-right: calc(var(--baseMargin) * 3);
-            }
-
-            .u-mr-32 {
-              margin-right: calc(var(--baseMargin) * 4);
-            }
-
-            .u-mr-40 {
-              margin-right: calc(var(--baseMargin) * 5);
-            }
-
-            .u-mr-48 {
-              margin-right: calc(var(--baseMargin) * 6);
-            }
-
-            .u-mb-0 {
-              margin-bottom: 0;
-            }
-
-            .u-mb-8 {
-              margin-bottom: var(--baseMargin);
-            }
-
-            .u-mb-16 {
-              margin-bottom: calc(var(--baseMargin) * 2);
-            }
-
-            .u-mb-24 {
-              margin-bottom: calc(var(--baseMargin) * 3);
-            }
-
-            .u-mb-32 {
-              margin-bottom: calc(var(--baseMargin) * 4);
-            }
-
-            .u-mb-40 {
-              margin-bottom: calc(var(--baseMargin) * 5);
-            }
-
-            .u-mb-48 {
-              margin-bottom: calc(var(--baseMargin) * 6);
-            }
-
-            .u-ml-0 {
-              margin-left: 0;
-            }
-
-            .u-ml-8 {
-              margin-left: var(--baseMargin);
-            }
-
-            .u-ml-16 {
-              margin-left: calc(var(--baseMargin) * 2);
-            }
-
-            .u-ml-24 {
-              margin-left: calc(var(--baseMargin) * 3);
-            }
-
-            .u-ml-32 {
-              margin-left: calc(var(--baseMargin) * 4);
-            }
-
-            .u-ml-40 {
-              margin-left: calc(var(--baseMargin) * 5);
-            }
-
-            .u-ml-48 {
-              margin-left: calc(var(--baseMargin) * 6);
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>misc</h3>
-          <pre class="brush: css;">
-            .u-ws-nowrap {
-              white-space: nowrap;
-            }
-
-            .u-mx-img {
-              max-width: 100%;
-            }
-
-            .u-tx-inside {
-              text-indent: -1em;
-              margin-left: 1em;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>padding</h3>
-          <pre class="brush: css;">
-            .u-pt-0 {
-              padding-top: 0;
-            }
-
-            .u-pt-8 {
-              padding-top: var(--baseMargin);
-            }
-
-            .u-pt-16 {
-              padding-top: calc(var(--baseMargin) * 2);
-            }
-
-            .u-pt-24 {
-              padding-top: calc(var(--baseMargin) * 3);
-            }
-
-            .u-pt-32 {
-              padding-top: calc(var(--baseMargin) * 4);
-            }
-
-            .u-pt-40 {
-              padding-top: calc(var(--baseMargin) * 5);
-            }
-
-            .u-pt-48 {
-              padding-top: calc(var(--baseMargin) * 6);
-            }
-
-            .u-pr-0 {
-              padding-right: 0;
-            }
-
-            .u-pr-8 {
-              padding-right: var(--baseMargin);
-            }
-
-            .u-pr-16 {
-              padding-right: calc(var(--baseMargin) * 2);
-            }
-
-            .u-pr-24 {
-              padding-right: calc(var(--baseMargin) * 3);
-            }
-
-            .u-pr-32 {
-              padding-right: calc(var(--baseMargin) * 4);
-            }
-
-            .u-pr-40 {
-              padding-right: calc(var(--baseMargin) * 5);
-            }
-
-            .u-pr-48 {
-              padding-right: calc(var(--baseMargin) * 6);
-            }
-
-            .u-pb-0 {
-              padding-bottom: 0;
-            }
-
-            .u-pb-8 {
-              padding-bottom: var(--baseMargin);
-            }
-
-            .u-pb-16 {
-              padding-bottom: calc(var(--baseMargin) * 2);
-            }
-
-            .u-pb-24 {
-              padding-bottom: calc(var(--baseMargin) * 3);
-            }
-
-            .u-pb-32 {
-              padding-bottom: calc(var(--baseMargin) * 4);
-            }
-
-            .u-pb-40 {
-              padding-bottom: calc(var(--baseMargin) * 5);
-            }
-
-            .u-pb-48 {
-              padding-bottom: calc(var(--baseMargin) * 6);
-            }
-
-            .u-pl-0 {
-              padding-left: 0;
-            }
-
-            .u-pl-8 {
-              padding-left: var(--baseMargin);
-            }
-
-            .u-pl-16 {
-              padding-left: calc(var(--baseMargin) * 2);
-            }
-
-            .u-pl-24 {
-              padding-left: calc(var(--baseMargin) * 3);
-            }
-
-            .u-pl-32 {
-              padding-left: calc(var(--baseMargin) * 4);
-            }
-
-            .u-pl-40 {
-              padding-left: calc(var(--baseMargin) * 5);
-            }
-
-            .u-pl-48 {
-              padding-left: calc(var(--baseMargin) * 6);
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>position</h3>
-          <pre class="brush: css;">
-            .u-pos-a {
-              position: absolute !important;
-            }
-
-            .u-pos-r {
-              position: relative !important;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>text-align</h3>
-          <pre class="brush: css;">
-            .u-ta-l {
-              text-align: left !important;
-            }
-
-            .u-ta-c {
-              text-align: center !important;
-            }
-
-            .u-ta-r {
-              text-align: right !important;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>text-decoration</h3>
-          <pre class="brush: css;">
-            .u-fw-n {
-              font-weight: normal !important;
-            }
-
-            .u-fw-b {
-              font-weight: bold !important;
-            }
-
-            .u-td-u {
-              text-decoration: underline !important;
-            }
-
-            .u-td-none {
-              text-decoration: none !important;
-            }
-
-            .u-td-lh {
-              text-decoration: line-through !important;
-              opacity: .6;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>text-truncate</h3>
-          <pre class="brush: css;">
-            .u-tt {
-              display: block;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>vertical-align</h3>
-          <pre class="brush: css;">
-            .u-va-t {
-              vertical-align: top !important;
-            }
-
-            .u-va-m {
-              vertical-align: middle !important;
-            }
-
-            .u-va-b {
-              vertical-align: bottom !important;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>white-space</h3>
-          <pre class="brush: css;">
-            .u-ws-pre {
-              white-space: pre;
-            }
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
-          <h3>width</h3>
-          <pre class="brush: css;">
-          .u-w-auto {
-            width: auto!important;
-          }
-
-          .u-w-full {
-            width: 100% !important;
-          }
-
-          .u-w-half {
-            width: 45% !important;
-            margin: 0 2%;
-          }
-          </pre>
-        </div>
-
-      </div>
     </div>
     <div class="c-grid__col c-grid__col--3of12 c-fixed">
-      <div class="c-container js-fixed-content-wrap">
-        <div class="c-fixed__content js-fixed-content">
-          <ul class="c-menu">
-            <li class="c-menu__item"><a class="js-page-link" href="#heading">Heading</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#paragraph">Paragraph</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#address">Address</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#list">List</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#dl">dl, dt, dd</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#alert">Alert</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#avatar">Avatar</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#bar">Bar</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#button">Button</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#card">Card</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#clamp">Clamp</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#container">Container</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#form">Form</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#grid">Grid</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#hero">Hero</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#label">Label</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#media">Media</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#menu">Menu</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#nav">Nav</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#table">Table</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#text">Text</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#js">JavaScript</a></li>
-            <li class="c-menu__item"><a class="js-page-link" href="#utility">Utility</a></li>
-          </ul>
+      <div class="u-d-pc">
+        <div class="c-container js-fixed-content-wrap">
+          <div class="c-fixed__content js-fixed-content">
+            <ul class="c-menu">
+              <li class="c-menu__item"><a class="js-page-link" href="#alert">Alert</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#avatar">Avatar</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#bar">Bar</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#button">Button</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#card">Card</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#clamp">Clamp</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#container">Container</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#form">Form</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#grid">Grid</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#hero">Hero</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#label">Label</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#media">Media</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#menu">Menu</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#nav">Nav</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#table">Table</a></li>
+              <li class="c-menu__item"><a class="js-page-link" href="#text">Text</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="l-footer js-footer">
-    <p>© 2015 - 2017 イチマルニデザイン</p>
-  </div>
-
 </div>
-<script src="./assets/js/common.js"></script>
+<div class="l-footer js-footer">
+  <p>© 2015 - 2017 イチマルニデザイン</p>
+</div>
+<script src="../assets/js/jquery-3.2.0.min.js"></script>
+<script src="../assets/js/common.js"></script>
 </body>
 </html>

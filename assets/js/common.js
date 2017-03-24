@@ -162,14 +162,13 @@ FixedContent.prototype.customScroll = function(scrollValue){
 
     if(self.$sideOffsetTop <= scrollValue){
 
-      if($targetPos < scrollValue){
+      if($targetPos < scrollValue && self.$wH - self.$bottomContentH < self.$sideH){
         if(!$this.hasClass('is-absolute')){
           $this.addClass('is-absolute');
           $this.removeClass('is-fixed');
           $this.css({top: 'auto', bottom: 0});
         }
       }else{
-        
         if(!$this.hasClass('is-fixed')){
           $this.addClass('is-fixed');
           $this.removeClass('is-absolute');
