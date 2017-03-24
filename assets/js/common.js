@@ -44,8 +44,10 @@ jQuery(document).ready(function($){
   /**
    * fixedContent
    */
-  var fixedContent = new FixedContent();
-  fixedContent;
+  $('.js-fixed-content').each(function(){
+    var fixedContent = new FixedContent();
+    fixedContent;
+  });
 });
 
 // Modal
