@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/kimuratakumi/.nodebrew/node/v6.5.0/bin/node',
+1 verbose cli   '/Users/kimuratakumi/.nodebrew/current/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.9
+3 info using node@v6.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/kimuratakumi/Desktop/works/nimbus',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/kimuratakumi/.npm correctMkdir not in flight; initializing
+10 info lifecycle nimbus-jquery@1.0.6~prepublish: nimbus-jquery@1.0.6
+11 silly lifecycle nimbus-jquery@1.0.6~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package.tgz',
+12 verbose tar pack   '/Users/kimuratakumi/Desktop/works/nimbus' ]
+13 verbose tarball /Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package.tgz
+14 verbose folder /Users/kimuratakumi/Desktop/works/nimbus
+15 verbose addLocalTarball adding from inside cache /Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package.tgz
+16 verbose correctMkdir /Users/kimuratakumi/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd nimbus-jquery@1.0.6
+18 verbose afterAdd /Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/kimuratakumi/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package/package.json written
+21 silly publish { name: 'nimbus-jquery',
+21 silly publish   version: '1.0.6',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author:
+21 silly publish    { name: 'Takumi0901',
+21 silly publish      email: 'juventus0901@gmail.com',
+21 silly publish      url: 'https://github.com/Takumi0901' },
+21 silly publish   license: 'MIT',
+21 silly publish   description: 'CSS is being changed using PostCSS in Nimbus.CSS holds a used plug-in at a minimum to avoid the one of being too to will be in the original specification.',
+21 silly publish   devDependencies:
+21 silly publish    { cssnano: '^3.8.1',
+21 silly publish      gulp: '^3.9.1',
+21 silly publish      'gulp-plumber': '^1.1.0',
+21 silly publish      'gulp-postcss': '^6.2.0',
+21 silly publish      'gulp-rename': '^1.2.2',
+21 silly publish      'gulp-sourcemaps': '^1.9.1',
+21 silly publish      'postcss-cssnext': '^2.10.0',
+21 silly publish      'postcss-import': '^8.2.0',
+21 silly publish      'postcss-nested': '^1.0.0',
+21 silly publish      'postcss-scss': '^0.4.1',
+21 silly publish      stylelint: '^7.6.0',
+21 silly publish      'stylelint-config-standard': '^15.0.0' },
+21 silly publish   readme: '## The feature of Nimbus\n### PostCSS\n\nCSS is being changed using PostCSS in Nimbus.CSS holds a used plug-in at a minimum to avoid the one of being too to will be in the original specification.\n\n#### Plugin\n\n- postcss-cssnext\n- postcss-import\n- postcss-nested\n- cssnano\n\n### Responsive & Mobile first\n\nThe grid system is flexbox based. So it\'s simple and excellent than the float layout! Same height box, Reverse grid, Equal spacing layout and more.\n\n### Component which is often used was collected.\n\ncomponent which is often used by a corporate site was collected. It\'s possible to button up the favorite color and size by changing the color and the size which become a basis.\n\n## Architecture\n\nThe architecture of CSS in Nimbus is based on FLOCSS. There is variables.css which manages a variable of CSS by a core directory. It\'s made compilation now using Gulp.\n\n```\n├ core/\n├ foundation/\n├ layout/\n└ object/\n  ├ component/\n  ├ project/\n  └ utility/\n```\n\n## License\n\nNimbus licensed under MIT. Nimbus is absolutely free for personal or commercial use.\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'a74342ce15732c70e2f2cb81751ca52f5886a55c',
+21 silly publish   _id: 'nimbus-jquery@1.0.6',
+21 silly publish   _shasum: 'b2b023dad12ccb37e2ac36139046f4d8cece4fea',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name nimbus-jquery
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'nimbus-jquery',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'nimbus-jquery',
+26 silly mapToRegistry   name: 'nimbus-jquery',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/nimbus-jquery
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/kimuratakumi/.npm/nimbus-jquery/1.0.6/package.tgz
+30 verbose request uri https://registry.npmjs.org/nimbus-jquery
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 22:46:29
+33 verbose request using bearer token for auth
+34 verbose request id c0add47ee71dd302
+35 http request PUT https://registry.npmjs.org/nimbus-jquery
+36 http 403 https://registry.npmjs.org/nimbus-jquery
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 27 Mar 2017 13:46:31 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-itm7426-ITM',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1490622390.237064,VS0,VE1453',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/kimuratakumi/.npm/registry.npmjs.org/nimbus-jquery on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.6." : nimbus-jquery
+40 verbose stack     at makeError (/Users/kimuratakumi/.nodebrew/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/kimuratakumi/.nodebrew/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/kimuratakumi/.nodebrew/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/kimuratakumi/.nodebrew/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/kimuratakumi/.nodebrew/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/kimuratakumi/.nodebrew/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid nimbus-jquery
+43 verbose cwd /Users/kimuratakumi/Desktop/works/nimbus
+44 error Darwin 16.4.0
+45 error argv "/Users/kimuratakumi/.nodebrew/node/v6.5.0/bin/node" "/Users/kimuratakumi/.nodebrew/current/bin/npm" "publish"
+46 error node v6.5.0
+47 error npm  v3.10.9
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.6." : nimbus-jquery
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
