@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
     var $this = $(this);
 
     $this.parent().siblings().removeClass('is-active').end().addClass('is-active');
-    
+
     var tabId = $this.data('tabid');
     $this.closest('.js-tab').find('.js-tab-body').each(function(){
       var $content = $(this);
@@ -161,8 +161,7 @@ FixedContent.prototype.customScroll = function(scrollValue){
     var $this = $(this);
     var $targetEle = $('.js-footer').offset().top;
     var $targetPos = $targetEle - self.$wH;
-
-    if(self.$sideOffsetTop <= scrollValue){
+    if(self.$sideOffsetTop - self.$headerH - 24 <= scrollValue){
 
       if($targetPos < scrollValue && self.$wH - self.$bottomContentH < self.$sideH){
         if(!$this.hasClass('is-absolute')){
@@ -171,6 +170,7 @@ FixedContent.prototype.customScroll = function(scrollValue){
           $this.css({top: 'auto', bottom: 0});
         }
       }else{
+
         if(!$this.hasClass('is-fixed')){
           $this.addClass('is-fixed');
           $this.removeClass('is-absolute');
