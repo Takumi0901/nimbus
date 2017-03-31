@@ -4,14 +4,14 @@
   padding: 0;
 
   &--medium {
-    .c-nav__item a {
+    & .c-nav__item a {
       line-height: var(--middleHeight);
       height: var(--middleHeight);
     }
   }
 
   &--small {
-    .c-nav__item a {
+    & .c-nav__item a {
       line-height: var(--smallHeight);
       height: var(--smallHeight);
     }
@@ -22,7 +22,7 @@
 .c-nav__item {
  display: inline-block;
 
- a{
+  & a{
    display: block;
    padding: 0 calc(var(--baseMargin) * 2);
    text-decoration: none;
@@ -31,11 +31,11 @@
    line-height: var(--largeHeight);
    height: var(--largeHeight);
 
-   &:hover {
-     color: var(--colorDefaultDarken2);
-     background: var(--colorDefaultLigten2);
-   }
- }
+    &:hover {
+       color: var(--colorDefaultDarken2);
+       background: var(--colorDefaultLigten2);
+    }
+  }
 
  &__icon {
    font-size: 20px;
@@ -43,7 +43,7 @@
 }
 
 .c-nav--len3{
-  .c-nav__item {
+  & .c-nav__item {
     width: 33.33333%;
     text-align: center;
     display: block;
@@ -52,7 +52,7 @@
 }
 
 .c-nav--len4{
-  .c-nav__item {
+  & .c-nav__item {
     width: 25%;
     text-align: center;
     display: block;
@@ -61,7 +61,7 @@
 }
 
 .c-nav--len5{
-  .c-nav__item {
+  & .c-nav__item {
     width: 20%;
     text-align: center;
     display: block;

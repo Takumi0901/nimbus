@@ -1,11 +1,11 @@
 .c-form {
-  input[type=text],
-  input[type=url],
-  input[type=tel],
-  input[type=password],
-  input[type=email],
-  textarea,
-  select {
+  & input[type=text],
+  & input[type=url],
+  & input[type=tel],
+  & input[type=password],
+  & input[type=email],
+  & textarea,
+  & select {
     background: var(--colorWhite);
     display: inline-block;
     border: solid 1px var(--colorDefaultLigten2);
@@ -16,7 +16,7 @@
     border-radius: 1px;
   }
 
-  .c-form__title {
+  &__title {
     position: relative;
   }
 
@@ -52,7 +52,7 @@
 
     box-shadow: 0 0 6px var(--colorDefaultAlpha3);
 
-    p {
+    & p {
       margin-bottom: 0;
     }
   }
@@ -162,20 +162,20 @@
 }
 
 .c-form .is-error {
-  input[type=text],
-  input[type=url],
-  input[type=tel],
-  input[type=password],
-  input[type=email],
-  input[type=date],
-  input[type=number],
-  input[type=num],
-  textarea {
+  & input[type=text],
+  & input[type=url],
+  & input[type=tel],
+  & input[type=password],
+  & input[type=email],
+  & input[type=date],
+  & input[type=number],
+  & input[type=num],
+  & textarea {
     background: color(var(--colorHighlight) whiteness(80%));
     border: solid 1px color(var(--colorHighlight) whiteness(60%));
   }
 
-  .c-form__input-box__alert {
+  & .c-form__input-box__alert {
     display: block;
   }
 }

@@ -4,13 +4,14 @@
   }
 
   .c-table--basic {
-    th,
-    td {
+
+    & th,
+    & td {
       width: 100%;
       display: block;
     }
 
-    tr {
+    & tr {
       display: block;
     }
   }
@@ -19,12 +20,12 @@
     display: block;
     position: relative;
 
-    thead {
+    & thead {
       display: block;
       float: left;
     }
 
-    tbody {
+    & tbody {
       display: block;
       width: auto;
       position: relative;
@@ -33,20 +34,20 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    th,
-    td {
+    & th,
+    & td {
       display: block;
     }
 
-    tr {
+    & tr {
       display: inline-block;
     }
     
-    tbody tr {
+    & tbody tr {
       margin-right: calc(var(--baseMargin) * -2);
 
-      th,
-      td {
+      & th,
+      & td {
         min-width: 160px;
       }
     }
@@ -55,11 +56,11 @@
   .c-table--separate {
     border: none;
 
-    thead {
+    & thead {
       display: none;
     }
 
-    tr {
+    & tr {
       display: block;
       margin-bottom: calc(var(--baseMargin) * 3);
       border-bottom: 0;
@@ -70,13 +71,13 @@
       }
     }
 
-    td {
+    & td {
       border-bottom: solid 1px var(--colorDefaultLigten2);
       display: block;
       text-align: right;
     }
 
-    td::before {
+    & td::before {
       content: attr(data-label);
       float: left;
       font-weight: bold;

@@ -41,7 +41,7 @@ h6 {
   margin: 0 0 calc(var(--baseMargin) * 2);
   color: var(--fontColorDark);
   
-  img {
+  & img {
     vertical-align: baseline;
   }
 }
@@ -102,26 +102,26 @@ table {
   border-bottom: solid 1px var(--colorDefaultLigten2);
   border-top: solid 1px var(--colorDefaultLigten2);
 
-  td,
-  th {
+  & td,
+  & th {
     text-align: left;
     padding: calc(var(--baseMargin) * 2);
     font-size: 12px;
   }
 
-  th{
+  & th{
     color: var(--colorDefaultDarken2);
   }
 
-  thead {
+  & thead {
     border-bottom: solid 1px var(--colorDefaultLigten2);
   }
 
-  tbody tr {
+  & tbody tr {
     border-bottom: solid 1px var(--colorDefaultLigten2);
   }
 
-  tr:last-child {
+  & tr:last-child {
     border-bottom: none;
   }
 }

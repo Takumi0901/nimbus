@@ -7,7 +7,6 @@ CSS is being changed using PostCSS in Nimbus.CSS holds a used plug-in at a minim
 
 - postcss-cssnext
 - postcss-import
-- postcss-nested
 - cssnano
 
 ### Responsive & Mobile first

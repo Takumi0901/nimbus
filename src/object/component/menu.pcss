@@ -7,7 +7,7 @@
 .c-menu--border {
   border-top: solid 1px var(--colorDefaultLigten2);
 
-  .c-menu__item:last-child {
+  & .c-menu__item:last-child {
     border-bottom: solid 1px var(--colorDefaultLigten2);
   }
 }
@@ -22,7 +22,7 @@
     border: 0;
   }
 
-  a {
+  & a {
     display: block;
     padding: var(--baseMargin) calc(var(--baseMargin) * 4) var(--baseMargin) var(--baseMargin);
     text-decoration: none;
@@ -32,7 +32,8 @@
       background: var(--colorDefaultLigten2);
     }
   }
-  a.is-active {
+  
+  & a.is-active {
     background: var(--colorDefaultDarken1);
     color: var(--colorWhite);
 

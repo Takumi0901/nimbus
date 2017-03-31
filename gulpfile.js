@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     cssNano = require('cssnano'),
     postcssImport = require('postcss-import'),
-    postcssNested = require('postcss-nested'),
     plumber = require('gulp-plumber'),
     cssNext = require('postcss-cssnext');
 
@@ -12,7 +11,6 @@ var gulp = require('gulp'),
 gulp.task('css', function() {
   var preProcessors = [
     postcssImport(),
-    postcssNested(),
     cssNext()
   ];
 
