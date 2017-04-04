@@ -1,8 +1,6 @@
 .c-bar {
   display: block;
   background: var(--colorWhite);
-  line-height: var(--largeHeight);
-  height: var(--largeHeight);
 
   & h1,
   & h2,
@@ -19,6 +17,11 @@
 
   &--shadow-bottom {
     box-shadow: 0 2px 6px var(--colorDefaultAlpha1);
+  }
+
+  &--large {
+    line-height: var(--largeHeight);
+    height: var(--largeHeight);
   }
 
   &--medium {
