@@ -1,7 +1,6 @@
 /* Common
 ----------------------------------------------------*/
 .c-btn {
-  color: var(--fontColorLight);
   display: inline-block;
   border: 0;
   text-align: center;
@@ -25,111 +24,13 @@
   }
 
   &:hover {
-    background: color(var(--colorDefault) lightness(90%));
+    opacity: .7;
   }
 
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
     opacity: .7;
-  }
-}
-
-
-/* Primary
-----------------------------------------------------*/
-.c-btn--primary {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorPrimary);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorPrimary);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorPrimary) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorPrimary);
-  }
-}
-
-/* Secondary
-----------------------------------------------------*/
-.c-btn--secondary {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorSecondary);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorSecondary);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorSecondary) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorSecondary);
-  }
-}
-
-/* Secondary
-----------------------------------------------------*/
-.c-btn--info {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorInfo);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorInfo);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorInfo) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorInfo);
-  }
-}
-
-
-/* Highlight
-----------------------------------------------------*/
-.c-btn--highlight {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorHighlight);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorHighlight);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorHighlight) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorHighlight);
   }
 }
 
