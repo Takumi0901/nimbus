@@ -58,14 +58,6 @@
   </div>
   <div class="c-grid c-grid--gutters c-grid--query">
     <div class="c-grid__col c-grid__col--9of12">
-      <div id="anchor" class="c-container">
-        <h1>Anchor</h1>
-        <p><a href="#">Anchor</a></p>
-
-        <pre class="brush: html;">
-        <a href="#">Anchor</a>
-        </pre>
-      </div>
 
       <div id="alert" class="c-container">
         <h1>Alert</h1>
@@ -85,6 +77,10 @@
         <h1>Avatar</h1>
         <div class="c-avatar c-avatar--small u-mb-32"><img src="image/thumb.jpg" alt=""></div>
 
+        <pre class="brush: html;">
+        <div class="c-avatar c-avatar--small"><img src="image/thumb.jpg" alt=""></div>
+        </pre>
+
         <h3>Modifier</h3>
         <table class="c-table">
           <tr>
@@ -100,12 +96,12 @@
 
       <div id="bar" class="c-container">
         <h1>Bar</h1>
-        <div class="c-bar c-bar--shadow-bottom">
+        <div class="c-bar c-bar--medium c-bar--shadow-bottom">
           <div class="c-bar__inner">Bar</div>
         </div>
 
         <pre class="brush: html;">
-        <div class="c-bar c-bar--shadow-bottom">
+        <div class="c-bar c-bar--medium c-bar--shadow-bottom">
           <div class="c-bar__inner">Bar</div>
         </div>
         </pre>
@@ -124,14 +120,6 @@
             <td>
               <span>c-bar--medium</span><br/>
               <span>c-bar--small</span>
-            </td>
-          </tr>
-          <tr>
-            <th>Color</th>
-            <td>
-              <span>c-bar--primary</span><br/>
-              <span>c-bar--secondary</span><br/>
-              <span>c-bar--info</span>
             </td>
           </tr>
           <tr>
@@ -159,49 +147,32 @@
         </div>
 
         <div class="u-mb-32">
-          <h3>Color</h3>
-          <p>
-            <button class="c-btn">default</button>
-            <button class="c-btn c-btn--primary">primary</button>
-            <button class="c-btn c-btn--secondary">secondary</button>
-            <button class="c-btn c-btn--info">info</button>
-            <button class="c-btn c-btn--highlight">highlight</button>
-          </p>
-
-          <pre class="brush: html;">
-          <button class="c-btn">default</button>
-          <button class="c-btn c-btn--primary">primary</button>
-          <button class="c-btn c-btn--secondary">secondary</button>
-          <button class="c-btn c-btn--info">info</button>
-          <button class="c-btn c-btn--highlight">highlight</button>
-          </pre>
-        </div>
-
-        <div class="u-mb-32">
           <h3>Size</h3>
           <p>
-            <button class="c-btn c-btn--primary c-btn--jumbo">Button</button>
-            <button class="c-btn c-btn--primary c-btn--large">Button</button>
-            <button class="c-btn c-btn--primary c-btn--small">Button</button>
-            <button class="c-btn c-btn--primary c-btn--tiny">Button</button>
+            <button class="c-btn c-btn--jumbo">Button</button>
+            <button class="c-btn c-btn--large">Button</button>
+            <button class="c-btn">Button</button>
+            <button class="c-btn c-btn--small">Button</button>
+            <button class="c-btn c-btn--tiny">Button</button>
           </p>
 
           <pre class="brush: html;">
-          <button class="c-btn c-btn--primary c-btn--jumbo">Button</button>
-          <button class="c-btn c-btn--primary c-btn--large">Button</button>
-          <button class="c-btn c-btn--primary c-btn--small">Button</button>
-          <button class="c-btn c-btn--primary c-btn--tiny">Button</button>
+          <button class="c-btn c-btn--jumbo">Button</button>
+          <button class="c-btn c-btn--large">Button</button>
+          <button class="c-btn">Button</button>
+          <button class="c-btn c-btn--small">Button</button>
+          <button class="c-btn c-btn--tiny">Button</button>
           </pre>
         </div>
 
         <div class="u-mb-32">
           <h3>Display</h3>
           <p>
-            <button class="c-btn c-btn--primary c-btn--block">primary</button>
+            <button class="c-btn c-btn--block">primary</button>
           </p>
 
           <pre class="brush: html;">
-          <button class="c-btn c-btn--primary c-btn--block">primary</button>
+          <button class="c-btn c-btn--block">primary</button>
           </pre>
         </div>
       </div>
@@ -294,13 +265,13 @@
         <h1>Form</h1>
         <div class="c-form">
           <div class="u-mb-32">
-            <h3 class="c-form__title">Input <span class="c-form__icon c-label c-label--required">required</span></h3>
+            <h3 class="c-form__title">Input <span class="c-form__icon c-label c-label--highlight">required</span></h3>
             <div><input type="text" placeholder="text"></div>
 
             <pre class="brush: html;">
               <div class="c-form">
                 <h3 class="c-form__title">Input
-                  <span class="c-form__icon c-label c-label--required">required</span>
+                  <span class="c-form__icon c-label c-label--highlight">required</span>
                 </h3>
                 <div><input type="text" placeholder="text"></div>
               </div>
@@ -377,7 +348,7 @@
             <tr>
               <th class="c-form__title">
                 input
-                <span class="c-form__icon c-form__icon--right c-label c-label--required">required</span>
+                <span class="c-form__icon c-form__icon--right c-label c-label--highlight">required</span>
               </th>
               <td><input type="text" placeholder="text"></td>
             </tr>
@@ -707,20 +678,20 @@
 
       <div id="hero" class="c-container">
         <h1>Hero</h1>
-        <div class="c-hero c-hero--basic c-hero--anim">
+        <div class="c-hero" style="background: linear-gradient(270deg,#4bd5f2,#2dd885); background-size: 400% 400%;">
           <div class="c-hero__inner">
             <h2 class="c-text--white">Hero Title</h2>
-            <p class="u-mb-0">
+            <p class="c-text--white u-mb-0">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
             </p>
           </div>
         </div>
 
         <pre class="brush: html;">
-          <div class="c-hero c-hero--basic c-hero--anim">
+          <div class="c-hero" style="background: linear-gradient(270deg,#4bd5f2,#2dd885); background-size: 400% 400%;">
             <div class="c-hero__inner">
               <h2 class="c-text--white">Hero Title</h2>
-              <p class="u-mb-0">
+              <p class="c-text--white u-mb-0">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
               </p>
             </div>
@@ -728,6 +699,14 @@
         </pre>
 
         <h3>Image</h3>
+        <div class="c-hero c-hero--image" style="background-image: url('image/hero.jpg');">
+          <div class="c-hero__inner">
+            <h2 class="c-text--white">Hero Title</h2>
+            <p class="c-text--white u-mb-0">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+        </div>
         <pre class="brush: html;">
           <div class="c-hero c-hero--image" style="background-image: url('image/hero.jpg');">
             <div class="c-hero__inner">
@@ -768,16 +747,10 @@
       <div id="label" class="c-container">
         <h1>Label</h1>
         <span class="c-label">Default</span>
-        <span class="c-label c-label--primary">Primary</span>
-        <span class="c-label c-label--secondary">Secondary</span>
-        <span class="c-label c-label--info">Info</span>
         <span class="c-label c-label--highlight">Highlight</span>
 
         <pre class="brush: html;">
           <span class="c-label">Default</span>
-          <span class="c-label c-label--primary">Primary</span>
-          <span class="c-label c-label--secondary">Secondary</span>
-          <span class="c-label c-label--info">Info</span>
           <span class="c-label c-label--highlight">Highlight</span>
         </pre>
       </div>
@@ -842,8 +815,8 @@
       <div id="nav" class="c-container">
         <h1>Nav</h1>
         <div class="u-mb-32">
-          <div class="c-bar c-bar--shadow-bottom">
-            <ul class="c-nav">
+          <div class="c-bar c-bar--large c-bar--shadow-bottom">
+            <ul class="c-nav c-nav--large">
               <li class="c-nav__item"><a href="#">Menu 1</a></li>
               <li class="c-nav__item"><a href="#">Menu 1</a></li>
               <li class="c-nav__item"><a href="#">Menu 1</a></li>
@@ -851,8 +824,8 @@
           </div>
 
           <pre class="brush: html;">
-            <div class="c-bar c-bar--shadow-bottom">
-              <ul class="c-nav">
+            <div class="c-bar c-bar--large c-bar--shadow-bottom">
+              <ul class="c-nav c-nav--large">
                 <li class="c-nav__item"><a href="#">Menu 1</a></li>
                 <li class="c-nav__item"><a href="#">Menu 1</a></li>
                 <li class="c-nav__item"><a href="#">Menu 1</a></li>
@@ -927,6 +900,7 @@
           <tr>
             <th>Size</th>
             <td>
+              <span>c-nav--large</span><br/>
               <span>c-nav--medium</span><br/>
               <span>c-nav--small</span>
             </td>
@@ -1133,13 +1107,11 @@
         <h1>Text</h1>
         <p class="c-text--primary">Primary</p>
         <p class="c-text--secondary">Secondary</p>
-        <p class="c-text--info">Info</p>
         <p class="c-text--highlight">Highlight</p>
         <p class="c-text--white" style="background: #ccc;">White</p>
         <pre class="brush: html;">
           <p class="c-text--primary">Primary</p>
           <p class="c-text--secondary">Secondary</p>
-          <p class="c-text--info">Info</p>
           <p class="c-text--highlight">Highlight</p>
           <p class="c-text--white">White</p>
         </pre>

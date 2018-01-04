@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 
+  &--large {
+    & .c-nav__item a {
+      line-height: var(--largeHeight);
+      height: var(--largeHeight);
+    }
+  }
+
   &--medium {
     & .c-nav__item a {
       line-height: var(--middleHeight);
@@ -27,9 +34,6 @@
    padding: 0 calc(var(--baseMargin) * 2);
    text-decoration: none;
    color: var(--baseColorText);
-
-   line-height: var(--largeHeight);
-   height: var(--largeHeight);
 
     &:hover {
        color: var(--colorDefaultDarken2);

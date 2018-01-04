@@ -1,15 +1,14 @@
 /* Common
 ----------------------------------------------------*/
 .c-btn {
-  color: var(--fontColorLight);
   display: inline-block;
   border: 0;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
   cursor: pointer;
-  padding: 0 2rem;
-  line-height: 4.8rem;
+  padding: 0 1.6rem;
+  line-height: 3.6rem;
   font-size: var(--fontSizeDefault);
   outline: none;
   position: relative;
@@ -25,111 +24,13 @@
   }
 
   &:hover {
-    background: color(var(--colorDefault) lightness(90%));
+    opacity: .7;
   }
 
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
     opacity: .7;
-  }
-}
-
-
-/* Primary
-----------------------------------------------------*/
-.c-btn--primary {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorPrimary);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorPrimary);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorPrimary) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorPrimary);
-  }
-}
-
-/* Secondary
-----------------------------------------------------*/
-.c-btn--secondary {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorSecondary);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorSecondary);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorSecondary) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorSecondary);
-  }
-}
-
-/* Secondary
-----------------------------------------------------*/
-.c-btn--info {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorInfo);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorInfo);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorInfo) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorInfo);
-  }
-}
-
-
-/* Highlight
-----------------------------------------------------*/
-.c-btn--highlight {
-  color: var(--colorWhite) !important;
-  background-color: var(--colorHighlight);
-
-  &:link {
-    color: var(--colorWhite) !important;
-    background-color: var(--colorHighlight);
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: var(--colorWhite) !important;
-    background-color: color(var(--colorHighlight) lightness(45%));
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: var(--colorHighlight);
   }
 }
 
@@ -148,7 +49,7 @@
 }
 
 .c-btn--small {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 2.8rem;
   padding: 0 1rem;
 }

@@ -31,6 +31,10 @@ The architecture of CSS in Nimbus is based on FLOCSS. There is variables.css whi
   └ utility/
 ```
 
+## How to contribute
+
+Please make an issue if there is a problem and needs. Please don't make the new issue if the issue of the same content already exists. If you can coding, please give me a pull request. But, please do not send in the master branch. Pull request sent to the master branch doesn't merge.
+
 ## License
 
 Nimbus licensed under MIT. Nimbus is absolutely free for personal or commercial use.
